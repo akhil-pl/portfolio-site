@@ -38,3 +38,7 @@ npm i react-icons
 ```
 
 On the folder structrure you can see there is a 'index.html', this is the root view of or app. Inside the 'src' folder are our .jsx and .css files. And also the assets folder.
+
+
+Link to add picture discription. https://codingstatus.com/how-to-display-images-in-react-js/
+
