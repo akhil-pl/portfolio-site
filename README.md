@@ -26,4 +26,15 @@ npm run dev
 ```
 This will install the required packages and run the application. Noe you can view the app in this link 'http://127.0.0.1:5173/'
 
+4. We will be using Tailwind CSS. For that run the followwing codes in the terminal. This specific for vite framework. https://tailwindcss.com/docs/guides/vite
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+5. We will be using react icons
+```bash
+npm i react-icons
+```
+
 On the folder structrure you can see there is a 'index.html', this is the root view of or app. Inside the 'src' folder are our .jsx and .css files. And also the assets folder.
