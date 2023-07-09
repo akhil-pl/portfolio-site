@@ -5,9 +5,9 @@ import {AiFillFacebook,
     AiFillLinkedin,
     AiFillInstagram} from 'react-icons/ai';
 import pic from "./Images/akhil.jpg";
-import code from "./Images/code.png";
-import consulting from "./Images/consulting.png";
-import design from "./Images/design.png";
+import code from "./Images/code.gif";
+import frontend from "./Images/frontend.gif";
+import ml from "./Images/ml.gif";
 import ak1 from "./Images/ak1.jpg";
 import ak2 from "./Images/ak2.jpg";
 import ak3 from "./Images/ak3.jpg";
@@ -70,20 +70,7 @@ function App() {
         </div>
         <div className=' lg:flex gap-10'>
             <div className=' text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
-                <img src={design} width={100} height={100} />
-                <h3 className=' text-lg font-medium pt-8 pb-2'>Web frontend desinging</h3>
-                <p className=' py-2'>
-                    Desing elegand and responsive frontend web pages using JavaScript packages like
-                    <span className=' text-teal-500'>VueJS & ReactJS </span> and CSS libraries like
-                    <span className=' text-teal-500'>Tailwind & Bootstrap</span>
-                </p>
-                <h4 className=' py-4 text-teal-600'>Other Tools used</h4>
-                <p className=' text-gray-800 py-1'>ChartJS</p>
-                <p className=' text-gray-800 py-1'>Bootstrap Icons</p>
-                <p className=' text-gray-800 py-1'>React Icons</p>
-            </div>
-            <div className=' text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
-                <img src={code} width={100} height={100} />
+                <img src={code} width={500} height={500} />
                 <h3 className=' text-lg font-medium pt-8 pb-2'>Backend and appication development</h3>
                 <p className=' py-2'>
                     Write scalable and effecient codes in Python. Familier with packages like
@@ -97,7 +84,20 @@ function App() {
                 <p className=' text-gray-800 py-1'>Java</p>
             </div>
             <div className=' text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
-                <img src={consulting} width={100} height={100} />
+                <img src={frontend} width={500} height={500} />
+                <h3 className=' text-lg font-medium pt-8 pb-2'>Web frontend desinging</h3>
+                <p className=' py-2'>
+                    Desing elegand and responsive frontend web pages using JavaScript packages like
+                    <span className=' text-teal-500'>VueJS & ReactJS </span> and CSS libraries like
+                    <span className=' text-teal-500'>Tailwind & Bootstrap</span>
+                </p>
+                <h4 className=' py-4 text-teal-600'>Other Tools used</h4>
+                <p className=' text-gray-800 py-1'>ChartJS</p>
+                <p className=' text-gray-800 py-1'>Bootstrap Icons</p>
+                <p className=' text-gray-800 py-1'>React Icons</p>
+            </div>
+            <div className=' text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
+                <img src={ml} width={500} height={500} />
                 <h3 className=' text-lg font-medium pt-8 pb-2'>Machine Learning</h3>
                 <p className=' py-2'>
                     Data Analysis and creating both supervised and unsupervised ML models like
