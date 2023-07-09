@@ -42,3 +42,4 @@ On the folder structrure you can see there is a 'index.html', this is the root v
 
 Link to add picture discription. https://codingstatus.com/how-to-display-images-in-react-js/
 
+6. We can delete App.css file as we are using tailwind CSS we only need one base CSS. Other CSS are given along the JS code as 'className'
