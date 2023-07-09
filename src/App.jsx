@@ -4,9 +4,6 @@ import Sidebar from './components/Sidebar';
 import Mainbar from './components/Mainbar';
 
 
-
-
-
 function App() {
     const [darkMode, setDarkMode] = useState(true);
 
