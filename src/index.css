@@ -12,3 +12,9 @@ body {
   font-family: "burtons";
   src: url("../Burtons.otf");
 }
+
+
+@font-face {
+    font-family: "RussoOne";
+    src: url("../RussoOne.otf");
+  }

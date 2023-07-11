@@ -8,7 +8,7 @@ function Home() {
   return (
     
     <section>
-        <div>
+        <div className=' pl-5'>
             <h3 className=' text-3xl py-1'>Services I offer</h3>
             <p className=' text-md py-2 leading-8 text-gray-800 md:text-xl mx-auto dark:text-yellow-50 '>
                 I am currently in my early stages of my coding journey, so there is nothing mutch I have to offer.
