@@ -1,7 +1,7 @@
 import React from 'react';
 import Typed from 'react-typed';
 
-import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {BsFillMoonStarsFill, BsFillArrowDownCircleFill} from 'react-icons/bs';
 import pic from "../Images/akhil.jpg";
 import resumePDF from "../Files/akhil.pdf";
 
@@ -54,6 +54,10 @@ function Sidebar(props) {
             <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-14 overflow-hidden md:w-96 md:h-96 '>
                 <img src={pic} layout='fill' objectFit='cover' />
             </div>
+        </div>
+        <div className=" pt-5 flex items-center justify-center lg:hidden">
+            <BsFillArrowDownCircleFill className=' animate-bounce text-2xl dark:text-yellow-50 lg:text-yellow-50 ' />    
+            <p className=' animate-bounce text-2xl dark:text-yellow-50 lg:text-yellow-50 '>Scroll down</p>
         </div>
     </section>
     

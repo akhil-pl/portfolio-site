@@ -21,7 +21,7 @@ function Home() {
                 <span className=' text-teal-500'>NumPy, Pandas, SkLearn</span> etc.
             </p>
         </div>
-        <div className=' lg:flex gap-10'>
+        <div className=' md:flex gap-10'>
             <div className=' text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 duration-300'>
                 <img className=' mx-auto' src={code} width={500} height={500} />
                 <h3 className=' text-lg font-medium pt-8 pb-2'>Backend and appication development</h3>
