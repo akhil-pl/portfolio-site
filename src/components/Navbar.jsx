@@ -6,7 +6,7 @@ import banner from "../Images/h.gif";
 
 function Navbar() {
 
-    const [nav,  setNav] = useState(false)
+    const [nav,  setNav] = useState(false);
 
     const handleNav = () => {
         setNav(!nav)
@@ -14,7 +14,7 @@ function Navbar() {
 
 
   return (
-    <div className=' bg-cover bg-center font-burtons flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-yellow-50' style={{ backgroundImage: `url(${banner})` }}>
+    <nav className={' sticky top-0 bg-cover bg-center font-burtons flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 md:pr-8 text-yellow-50'} style={{ backgroundImage: `url(${banner})` }}>
         <h1 className=' w-full text-3xl font-bold'>Go To</h1>
         {/* for bigger devices */}
         <ul className='hidden md:flex'>
@@ -25,7 +25,7 @@ function Navbar() {
             
         </ul>
         {/* for mobile devices */}
-        <div onClick={handleNav} className=' block md:hidden'>
+        <div onClick={handleNav} className=' cursor-pointer block md:hidden'>
             { nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} /> }
         </div>
         <div className={ nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-slate-300 dark:bg-gray-800 ease-in-out duration-700 ' : 'hidden' }>
@@ -37,7 +37,7 @@ function Navbar() {
                 <NavLink to={'/Contact'} onClick={handleNav} className={({isActive}) => isActive ? "text-teal-600 text-2xl p-4 block" : 'p-4 block' }>Contacts</NavLink>
             </ul>
         </div>
-    </div>
+    </nav>
   )
 }
 
