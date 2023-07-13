@@ -4,6 +4,8 @@ import Typed from 'react-typed';
 import {BsFillMoonStarsFill, BsFillArrowDownCircleFill} from 'react-icons/bs';
 import pic from "../Images/akhil.jpg";
 import resumePDF from "../Files/akhil.pdf";
+import logo from '../Images/logo.gif';
+
 
 function Sidebar(props) {
 
@@ -17,15 +19,18 @@ function Sidebar(props) {
 
   return (
     
-    <section className="min-h-screen lg:bg-gray-800">
+    <section className="min-h-screen bg-slate-300 dark:bg-gray-800">
         <nav className=' px-5 pt-10 mb-12 flex justify-between'>
-            <h1 className=' text-xl font-burtons dark:text-yellow-50 lg:text-yellow-50'>Hello World!</h1>            <ul className=' flex items-center'>
+            <div>
+                <img className=' mx-auto' src={logo} width={75} height={75} />
+            </div>
+            <ul className=' flex items-center'>
                 <li>
-                    <p className=' block dark:hidden lg:text-yellow-50'>Dark Mode</p>
+                    <p className=' block dark:hidden'>Dark Mode</p>
                     <p className=' hidden dark:block text-yellow-50'>Light Mode</p>
                 </li>
                 <li className=' pl-2'>
-                    <BsFillMoonStarsFill onClick={() => props.setDarkMode(!props.darkMode) } className=' cursor-pointer text-2xl dark:text-yellow-50 lg:text-yellow-50 ' />
+                    <BsFillMoonStarsFill onClick={() => props.setDarkMode(!props.darkMode) } className=' cursor-pointer text-2xl dark:text-yellow-50 ' />
                 </li>
                 <li>
                     <button
@@ -44,7 +49,7 @@ function Sidebar(props) {
                         AKHIL<br></br>P L
                     </h2>
                     <div>
-                        <h3 className=' font-burtons text-2xl py-2 md:text-3xl lg:text-2xl dark:text-yellow-50 lg:text-yellow-50'>
+                        <h3 className=' font-burtons text-2xl py-2 md:text-3xl lg:text-2xl dark:text-yellow-50 '>
                             <Typed strings={['PYTHON DEVELOPER', 'WEB DEVELOPER', 'DATA ANALYST']} typeSpeed={100} backSpeed={40} loop />
                         </h3>
                     </div>

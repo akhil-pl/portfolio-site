@@ -6,10 +6,11 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Work from '../pages/Work'
 import Contact from '../pages/Contact'
+import Footer from './Footer';
 
 function Mainbar() {
   return (
-    <div>
+    <div className=' pt-5 px-5'>
         <BrowserRouter>
             <Navbar />
             <Routes>
@@ -18,6 +19,7 @@ function Mainbar() {
                 <Route path='/Work' element={<Work />} />
                 <Route path='/Contact' element={<Contact />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     </div>
   )

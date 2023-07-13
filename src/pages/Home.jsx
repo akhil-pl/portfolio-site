@@ -7,62 +7,77 @@ import ml from "../Images/ml.gif";
 function Home() {
   return (
     
-    <section>
+    <section className=' pt-10 px-5'>
         <div className=' pl-5'>
-            <h3 className=' text-3xl py-1'>Services I offer</h3>
-            <p className=' text-md py-2 leading-8 text-gray-800 md:text-xl mx-auto dark:text-yellow-50 '>
-                I am currently in my early stages of my coding journey, so there is nothing mutch I have to offer.
-                But I have hands on experience in 
-                <span className=' text-teal-500'>Flask, Django, VueJS</span> and <span className=' text-teal-500'>ReactJS.</span>
-                I am also experienced in Bootstrap CSS and Tainwind.
+            <h3 className=' text-3xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>Services I offer</h3>
+            <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
+                As a passionate and enthusiastic professional embarking on a career in Programming and Data Science, 
+                I offer a range of services aimed at developing efficient and innovative software solutions. 
+                Whether you require a simple website or a complex web platform, 
+                I can deliver robust solutions that enhance user experience and meet your business objectives.
             </p>
-            <p className=' text-md py-2 leading-8 text-gray-800 md:text-xl mx-auto dark:text-yellow-50 '>
-                I am doing Diploma in Data Science. I am familier with pythom ML packages like
-                <span className=' text-teal-500'>NumPy, Pandas, SkLearn</span> etc.
+            <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
+                With a strong foundation in Python development, full-stack development, and machine learning, 
+                I can provide the following services:
             </p>
         </div>
         <div className=' md:flex gap-10'>
-            <div className=' text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 duration-300'>
+            <div className=' text-center bg-slate-400 dark:bg-gray-600 shadow-lg shadow-teal-600 p-10 rounded-xl my-10 flex-1 hover:scale-110 duration-300 hover:shadow-red-500'>
                 <img className=' mx-auto' src={code} width={500} height={500} />
-                <h3 className=' text-lg font-medium pt-8 pb-2'>Backend and appication development</h3>
-                <p className=' py-2'>
-                    Write scalable and effecient codes in Python. Familier with packages like
-                    <span className=' text-teal-500'>Flask & Django </span> and their currousponding dependencies.
-                    Experience in developing RESTFull APIs and managing databases like
-                    <span className=' text-teal-500'>SQLit, Redis & PostgreSQL</span>
+                <h3 className=' text-lg font-medium pt-8 pb-2 text-gray-800 mx-auto dark:text-yellow-50'>Back-end development</h3>
+                <p className=' py-2 text-justify text-gray-800 mx-auto dark:text-yellow-50'>
+                    With my proficiency in Python and frameworks like <span className=' text-teal-600'>Flask & Django</span>, 
+                    I can build secure and scalable back-end systems that power your web applications. 
+                    From API development to database management, 
+                    I prioritize clean code and best practices to ensure high performance and maintainability.
                 </p>
-                <h4 className=' py-4 text-teal-600'>Other Tools used</h4>
-                <p className=' text-gray-800 py-1'>Celery</p>
-                <p className=' text-gray-800 py-1'>Open API</p>
-                <p className=' text-gray-800 py-1'>Java</p>
+                <h4 className=' py-4 text-teal-600'>Familier with</h4>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Celery</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Open API</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Java</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>SQLite</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Redis</p>
             </div>
-            <div className=' text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 duration-300 '>
+            <div className=' text-center bg-slate-400 dark:bg-gray-600 shadow-lg shadow-teal-600 p-10 rounded-xl my-10 flex-1 hover:scale-110 duration-300 hover:shadow-red-500'>
                 <img className=' mx-auto' src={frontend} width={500} height={500} />
-                <h3 className=' text-lg font-medium pt-8 pb-2'>Web frontend desinging</h3>
-                <p className=' py-2'>
-                    Desing elegand and responsive frontend web pages using JavaScript packages like
-                    <span className=' text-teal-500'>VueJS & ReactJS </span> and CSS libraries like
-                    <span className=' text-teal-500'>Tailwind & Bootstrap</span>
+                <h3 className=' text-lg font-medium pt-8 pb-2 text-gray-800 mx-auto dark:text-yellow-50'>Front-end development</h3>
+                <p className=' py-2 text-justify text-gray-800 mx-auto dark:text-yellow-50'>
+                    Utilizing my knowledge in JavaScript libraries like <span className=' text-teal-600'>VueJS & ReactJS</span>, 
+                    I can design visually appealing and responsive user interfaces. 
+                    By employing modern design principles, I ensure that your website is attractive, 
+                    user-friendly, and accessible across different devices and browsers.
                 </p>
-                <h4 className=' py-4 text-teal-600'>Other Tools used</h4>
-                <p className=' text-gray-800 py-1'>ChartJS</p>
-                <p className=' text-gray-800 py-1'>Bootstrap Icons</p>
-                <p className=' text-gray-800 py-1'>React Icons</p>
+                <h4 className=' py-4 text-teal-600'>Familier with</h4>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Bootstrap</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Tailwind CSS</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>ChartJS</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Routing</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Vuex</p>
             </div>
-            <div className=' text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 duration-300'>
+            <div className=' text-center bg-slate-400 dark:bg-gray-600 shadow-lg shadow-teal-600 p-10 rounded-xl my-10 flex-1 hover:scale-110 duration-300 hover:shadow-red-500'>
                 <img className=' mx-auto' src={ml} width={500} height={500} />
-                <h3 className=' text-lg font-medium pt-8 pb-2'>Machine Learning</h3>
-                <p className=' py-2'>
-                    Data Analysis and creating both supervised and unsupervised ML models like
-                    <span className=' text-teal-500'>Linear & Kernal Regression, KNN </span> and
-                    <span className=' text-teal-500'>SVM</span>
+                <h3 className=' text-lg font-medium pt-8 pb-2 text-gray-800 mx-auto dark:text-yellow-50'>Machine Learning</h3>
+                <p className=' py-2 text-justify text-gray-800 mx-auto dark:text-yellow-50'>
+                    Building on my understanding of Python ML packages, I can assist with tasks like data preprocessing, 
+                    model training, and evaluation. Whether you're working on a small ML project or need guidance with 
+                    implementing algorithms like <span className=' text-teal-600'>Linear & Kernal Regresssion, KNN, SVM</span>, 
+                    I can support you in your data-driven endeavors.
                 </p>
-                <h4 className=' py-4 text-teal-600'>Tools used</h4>
-                <p className=' text-gray-800 py-1'>NumPy</p>
-                <p className=' text-gray-800 py-1'>Pandas</p>
-                <p className=' text-gray-800 py-1'>SkLearn</p>
+                <h4 className=' py-4 text-teal-600'>Familier with</h4>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>NumPY</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Pandas</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>scikit-learn</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Matplotlib</p>
+                <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>PyTorch</p>
             </div>
         </div>
+        <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
+            As a fresher, I bring a fresh perspective and a willingness to learn and adapt, providing valuable 
+            insights and suggestions to enhance your projects.<br></br>
+            I am dedicated to continuous learning and staying up-to-date with industry trends. 
+            By leveraging my skills and enthusiasm, I am committed to delivering solutions that meet your needs 
+            and contribute to your success.
+        </p>
     </section>
     
   )

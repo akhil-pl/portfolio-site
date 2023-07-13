@@ -14,7 +14,7 @@ function Navbar() {
 
 
   return (
-    <nav className={' sticky top-0 bg-cover bg-center font-burtons flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 md:pr-8 text-yellow-50'} style={{ backgroundImage: `url(${banner})` }}>
+    <nav className={' sticky top-0 bg-cover bg-center font-burtons flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 md:pr-8 text-yellow-50 rounded-3xl'} style={{ backgroundImage: `url(${banner})` }}>
         <h1 className=' w-full text-3xl font-bold'>Go To</h1>
         {/* for bigger devices */}
         <ul className='hidden md:flex'>
