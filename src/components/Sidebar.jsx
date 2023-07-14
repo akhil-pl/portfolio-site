@@ -5,6 +5,7 @@ import {BsFillMoonStarsFill, BsFillArrowDownCircleFill} from 'react-icons/bs';
 import pic from "../Images/akhil.jpg";
 import resumePDF from "../Files/akhil.pdf";
 import logo from '../Images/logo.gif';
+import scroll from '../Images/scroll.gif';
 
 
 function Sidebar(props) {
@@ -61,8 +62,8 @@ function Sidebar(props) {
             </div>
         </div>
         <div className=" pt-5 flex items-center justify-center lg:hidden">
-            <BsFillArrowDownCircleFill className=' animate-bounce text-2xl dark:text-yellow-50 lg:text-yellow-50 ' />    
-            <p className=' animate-bounce text-2xl dark:text-yellow-50 lg:text-yellow-50 '>Scroll down</p>
+            <img src={scroll} width={50} height={50} />
+            <p className=' animate-bounce text-2xl dark:text-yellow-50 lg:text-yellow-50 '>Scroll</p>
         </div>
     </section>
     
