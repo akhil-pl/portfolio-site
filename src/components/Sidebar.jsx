@@ -4,8 +4,8 @@ import Typed from 'react-typed';
 import {BsFillMoonStarsFill, BsFillArrowDownCircleFill} from 'react-icons/bs';
 import pic from "../Images/akhil.jpg";
 import resumePDF from "../Files/akhil.pdf";
-import logo from '../Images/logo.gif';
-import scroll from '../Images/scroll.gif';
+import logo from '../Images/Logos/logo.gif';
+import scroll from '../Images/Logos/scroll.gif';
 
 
 function Sidebar(props) {
