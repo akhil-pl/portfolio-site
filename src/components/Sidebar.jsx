@@ -22,7 +22,7 @@ function Sidebar(props) {
     <section className="min-h-screen bg-slate-300 dark:bg-gray-800">
         <nav className=' px-5 pt-10 mb-12 flex justify-between'>
             <div>
-                <img className=' mx-auto' src={logo} width={75} height={75} />
+                <img className=' mx-auto' src={logo} width={50} height={50} />
             </div>
             <ul className=' flex items-center'>
                 <li>
