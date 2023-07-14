@@ -1,7 +1,10 @@
 import React from 'react'
 
+import Message from '../components/Message';
+
 import {AiFillFacebook,
     AiFillGithub,
+    AiFillTwitterSquare,
     AiFillLinkedin,
     AiFillInstagram} from 'react-icons/ai';
 
@@ -13,28 +16,39 @@ import chat from '../Images/Logos/chat.gif';
 
 function Contact() {
   return (
-    <section className=' pt-10 px-5'>
+    <section className=' grid grid-cols-1 py-5 px-5 md:grid-cols-2 gap-8 items-center'>
         <div className=' pl-5'>
-            <h3 className=' text-3xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>Get In Touch</h3>
+            <h3 className=' text-3xl font-burtons text-gray-800 mx-auto dark:text-yellow-50'>Get In Touch</h3>
             <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
                 Thank you for visiting my portfolio site! I'm excited to connect with you and discuss how we can 
                 collaborate on exciting projects or answer any questions you may have. Feel free to reach out to 
                 me using any of the methods below:
             </p>
-            <div>
-                <ul>
-                    <li className='flex flex-wrap gap-3 items-center'><img className=' mx-auto' src={mobile} width={75} height={75} /> +91 9995 743 556</li>
-                    <li className='flex flex-wrap gap-3 items-center'><img className=' mx-auto' src={email} width={75} height={75} /> akhilplx@gmail.com</li>
-                    <li className='flex flex-wrap gap-3 items-center'><img className=' mx-auto' src={social} width={75} height={75} />
-                        <div className=' text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-yellow-50'>
-                            <AiFillFacebook />
-                            <AiFillGithub />
-                            <AiFillInstagram />
-                            <AiFillLinkedin />
-                        </div>    
-                    </li>
-                </ul>
-            </div>
+            <ul>
+                <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={location} width={75} height={75} /> Trivandrun, <br></br> India </li>
+                <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={mobile} width={75} height={75} /> +91 9995 743 556</li>
+                <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={email} width={75} height={75} /> akhilplx@gmail.com <br></br> akhilplx@outlook.com </li>
+                <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={social} width={75} height={75} />
+                    <div className=' text-3xl flex justify-center gap-8 py-3 text-gray-600 dark:text-yellow-50'>
+                        <a href="https://www.facebook.com/akhilplx" target="_blank" rel="noopener noreferrer"><AiFillFacebook /></a>
+                        <a href="https://github.com/akhil-pl" target="_blank" rel="noopener noreferrer"><AiFillGithub /></a>
+                        <a href="https://www.instagram.com/akhil_pl/" target="_blank" rel="noopener noreferrer"><AiFillInstagram /></a>
+                        <a href="https://www.linkedin.com/in/akhilplx" target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><AiFillTwitterSquare /></a>
+                    </div>    
+                </li>
+            </ul>
+        </div>
+        <div className=' p-5 bg-slate-400 dark:bg-gray-600 shadow-lg shadow-teal-600 rounded-xl my-10 flex-1 hover:scale-110 duration-300 hover:shadow-red-500'>
+            <h3 className='flex flex-wrap gap-3 items-center text-3xl font-burtons text-gray-800 mx-auto dark:text-yellow-50'> <img className=' mx-auto' src={chat} width={75} height={75} /> Message me</h3>
+            <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
+            Alternatively, you can use the contact form provided below to send me a message directly. 
+            Whether you have a project in mind, need assistance, or simply want to say hello, 
+            I'm here to listen and respond promptly.<br></br>
+            I value open communication and believe in the power of collaboration. 
+            Let's explore how we can work together to achieve your goals. I look forward to hearing from you!
+            </p>
+            <Message />
         </div>
     </section>
   )

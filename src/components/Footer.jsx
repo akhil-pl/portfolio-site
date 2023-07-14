@@ -23,7 +23,7 @@ function Footer() {
     <section className='max-x-[1240px] mx-auto py-1 px-8 grid md:grid-cols-3 gap-8 bg-slate-300 dark:bg-gray-800 text-slate-500 rounded-3xl items-center'>
         <div>
             <h1>
-                Akhil P L
+                Akhil P L | Python Developer
             </h1>
             <p>
                 Site build with ReactJS and Tailwind CSS
