@@ -2,7 +2,7 @@ import React from 'react'
 
 function WebProject() {
   return (
-    <div>
+    <div className='bg-slate-500 text-yellow-50'>
         This is from WebProject
     </div>
   )

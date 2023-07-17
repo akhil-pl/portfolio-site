@@ -2,11 +2,21 @@ import React from 'react'
 
 function About() {
   return (
-    <section>
-        <p className=' text-md p-5 leading-8 text-gray-800 md:text-lg text-justify mx-auto dark:text-yellow-50'>
-            An enthusiastic professional, currently in a daring attempt to restart his career in the field of Programming and Data Science, after having 8+ years of experience as a Civil Engineer. After finishing Diploma in Programming, now doing Diploma in Data Science as part of a multilevel online BS Degree offered by IIT, Madras.
-            Seeking a role as a Developer or Data Analyst, where I can apply my technical skills to develop efficient and innovative software solutions. Eager to learn and grow as a professional in a dynamic and collaborative work environment.
-        </p>
+    <section className=' pt-10 px-5'>
+        <div className=' pl-5'>
+            <h3 className=' text-3xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>Hello World!!</h3>
+            <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
+                As a passionate and enthusiastic professional embarking on a career in Programming and Data Science, 
+                I offer a range of services aimed at developing efficient and innovative software solutions. 
+                Whether you require a simple website or a complex web platform, 
+                I can deliver robust solutions that enhance user experience and meet your business objectives.
+            </p>
+            <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
+                With a strong foundation in Python development, full-stack development, and machine learning, 
+                I can provide the following services:
+            </p>
+        </div>
+        
     </section>
   )
 }

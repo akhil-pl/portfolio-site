@@ -4,7 +4,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Navbar from './Navbar'
 import Home from '../pages/Home'
 import About from '../pages/About'
-import Work from '../pages/Work'
+import Projects from '../pages/Projects'
 import Contact from '../pages/Contact'
 import Footer from './Footer';
 
@@ -16,7 +16,7 @@ function Mainbar() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/About' element={<About />} />
-                <Route path='/Work' element={<Work />} />
+                <Route path='/Projects' element={<Projects />} />
                 <Route path='/Contact' element={<Contact />} />
             </Routes>
             <Footer />

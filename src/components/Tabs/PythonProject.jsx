@@ -8,7 +8,7 @@ import ak4 from "../../Images/ak4.jpg";
 
 function PythonProject() {
   return (
-    <div>
+    <div className='bg-slate-500 text-yellow-50'>
         This is from Python Project
         <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
             <div className=' basis-1/3 flex-1'>

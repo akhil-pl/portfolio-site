@@ -18,10 +18,10 @@ function Navbar() {
         <h1 className=' w-full text-3xl font-bold'>Go To</h1>
         {/* for bigger devices */}
         <ul className='hidden md:flex'>
-            <NavLink to={'/'} className={({isActive}) => isActive ? "text-teal-600 underline underline-offset-4 text-2xl p-4  hover:animate-pulse hover:ring-4 ring-red-500" : 'p-4 hover:animate-pulse hover:ring-4 ring-red-500' } >Home</NavLink>
-            <NavLink to={'/About'} className={({isActive}) => isActive ? "text-teal-600 underline underline-offset-4 text-2xl p-4  hover:animate-pulse hover:ring-4 ring-red-500" : 'p-4  hover:animate-pulse hover:ring-4 ring-red-500' }>About</NavLink>
-            <NavLink to={'/Work'} className={({isActive}) => isActive ? "text-teal-600 underline underline-offset-4 text-2xl p-4  hover:animate-pulse hover:ring-4 ring-red-500" : 'p-4  hover:animate-pulse hover:ring-4 ring-red-500' }>Works</NavLink>
-            <NavLink to={'/Contact'} className={({isActive}) => isActive ? "text-teal-600 underline underline-offset-4 text-2xl p-4  hover:animate-pulse hover:ring-4 ring-red-500" : 'p-4  hover:animate-pulse hover:ring-4 ring-red-500' }>Contacts</NavLink>
+            <NavLink to={'/'} className={({isActive}) => isActive ? "text-teal-600 underline underline-offset-4 scale-125 py-4 px-12  hover:animate-pulse hover:ring-4 ring-red-500" : 'py-4 px-12 text-lg hover:animate-pulse hover:ring-4 ring-red-500' } >Home</NavLink>
+            <NavLink to={'/About'} className={({isActive}) => isActive ? "text-teal-600 underline underline-offset-4 scale-125 py-4 px-12  hover:animate-pulse hover:ring-4 ring-red-500" : 'py-4 px-12 text-lg  hover:animate-pulse hover:ring-4 ring-red-500' }>About</NavLink>
+            <NavLink to={'/Projects'} className={({isActive}) => isActive ? "text-teal-600 underline underline-offset-4 scale-125 py-4 px-12  hover:animate-pulse hover:ring-4 ring-red-500" : 'py-4 px-12 text-lg  hover:animate-pulse hover:ring-4 ring-red-500' }>Projects</NavLink>
+            <NavLink to={'/Contact'} className={({isActive}) => isActive ? "text-teal-600 underline underline-offset-4 scale-125 py-4 px-12  hover:animate-pulse hover:ring-4 ring-red-500" : 'py-4 px-12 text-lg  hover:animate-pulse hover:ring-4 ring-red-500' }>Contacts</NavLink>
             
         </ul>
         {/* for mobile devices */}
@@ -33,7 +33,7 @@ function Navbar() {
             <ul className=' md:hidden pt-24 uppercase p-4'>
                 <NavLink to={'/'} onClick={handleNav} className={({isActive}) => isActive ? "text-teal-600 text-2xl p-4 border-b border-gray-600 block" : 'p-4 border-b border-gray-600 block' }>Home</NavLink>
                 <NavLink to={'/About'} onClick={handleNav} className={({isActive}) => isActive ? "text-teal-600 text-2xl p-4 border-b border-gray-600 block" : 'p-4 border-b border-gray-600 block' }>About</NavLink>
-                <NavLink to={'/Work'} onClick={handleNav} className={({isActive}) => isActive ? "text-teal-600 text-2xl p-4 border-b border-gray-600 block" : 'p-4 border-b border-gray-600 block' }>Works</NavLink>
+                <NavLink to={'/Projects'} onClick={handleNav} className={({isActive}) => isActive ? "text-teal-600 text-2xl p-4 border-b border-gray-600 block" : 'p-4 border-b border-gray-600 block' }>Projects</NavLink>
                 <NavLink to={'/Contact'} onClick={handleNav} className={({isActive}) => isActive ? "text-teal-600 text-2xl p-4 block" : 'p-4 block' }>Contacts</NavLink>
             </ul>
         </div>
