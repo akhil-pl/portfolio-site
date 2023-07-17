@@ -1,9 +1,10 @@
 import React from 'react'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+// import 'react-tabs/style/react-tabs.css';
 
-import ak1 from "../Images/ak1.jpg";
-import ak2 from "../Images/ak2.jpg";
-import ak3 from "../Images/ak3.jpg";
-import ak4 from "../Images/ak4.jpg";
+import WebProject from '../components/Tabs/WebProject';
+import PythonProject from '../components/Tabs/PythonProject';
+import MLProject from '../components/Tabs/MLProject';
 
 
 function Work() {
@@ -19,20 +20,23 @@ function Work() {
             Seeking a role as a Developer or Data Analyst, where I can apply my technical skills to develop efficient and innovative software solutions. Eager to learn and grow as a professional in a dynamic and collaborative work environment.
             </p>
         </div>
-        <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
-            <div className=' basis-1/3 flex-1'>
-                <img src={ak1} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive" />
-            </div>
-            <div className=' basis-1/3 flex-1'>
-                <img src={ak2} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive" />
-            </div>
-            <div className=' basis-1/3 flex-1'>
-                <img src={ak3} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive" />
-            </div>
-            <div className=' basis-1/3 flex-1'>
-                <img src={ak4} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive" />
-            </div>
-        </div>
+        <Tabs>
+            <TabList className="flex bg-gray-200 rounded-t-lg">
+                <Tab className={' px-4 py-2 bg-gray-950 text-blue-500 border border-gray-300 rounded-md hover:bg-blue-200 focus:outline-none'} >Web Development</Tab>
+                <Tab className={' px-4 py-2 bg-gray-950 text-blue-500 border border-gray-300 rounded-md hover:bg-blue-200 focus:outline-none'} >Python Development</Tab>
+                <Tab className={' px-4 py-2 bg-gray-950 text-blue-500 border border-gray-300 rounded-md hover:bg-blue-200 focus:outline-none'} >Machine Learning</Tab>
+            </TabList>
+
+            <TabPanel>
+                <WebProject />
+            </TabPanel>
+            <TabPanel>
+                <PythonProject />
+            </TabPanel>
+            <TabPanel>
+                <MLProject />
+            </TabPanel>
+        </Tabs>
     </section>
     
   )

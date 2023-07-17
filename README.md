@@ -45,8 +45,9 @@ Link to add picture discription. https://codingstatus.com/how-to-display-images-
 6. We can delete App.css file as we are using tailwind CSS we only need one base CSS. Other CSS are given along the JS code as 'className'
 
 
-7. We will be using react-typed for styling, react-router-dom for routing. We may have to force install as the dependencies are not compatible
+7. We will be using react-typed for styling, react-router-dom for routing, react-tabs for tab views. We may have to force install as the dependencies are not compatible
 ```bash
 npm install react-typed --save --force
 npm install react-router-dom --force
+npm install react-tabs --force
 ```
