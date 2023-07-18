@@ -8,6 +8,18 @@ import Kanban4 from "../../Images/Projects/Kanban4.png";
 import Kanban5 from "../../Images/Projects/Kanban5.png";
 import Kanban6 from "../../Images/Projects/Kanban6.png";
 
+import Port1 from "../../Images/Projects/Port1.png";
+import Port2 from "../../Images/Projects/Port2.png";
+import Port3 from "../../Images/Projects/Port3.png";
+import Port4 from "../../Images/Projects/Port4.png";
+import Port5 from "../../Images/Projects/Port5.png";
+
+import Ngl1 from "../../Images/Projects/Ngl1.png";
+import Ngl2 from "../../Images/Projects/Ngl2.png";
+import Ngl3 from "../../Images/Projects/Ngl3.png";
+import Ngl4 from "../../Images/Projects/Ngl4.png";
+import Ngl5 from "../../Images/Projects/Ngl5.png";
+
 function WebProject() {
     const projects = [
         {
@@ -18,7 +30,22 @@ function WebProject() {
           link: 'NOT HOSTED',
           images: [{src: Kanban1, caption: 'Login or Register page' }, {src: Kanban2, caption: 'Home Page of the user'}, {src: Kanban3, caption:'Summary view of the user'}, {src:Kanban4, caption: 'Remainder mail sent to the user'}, {src: Kanban5, caption: 'Monthly report pdf sent to the user'}, {src: Kanban6, caption: 'Database schema diagram'}],
         },
-        // Add more projects here...
+        {
+            title: 'Portfolio App',
+            description: 'This is my port folio site. A completely frontend site written in ReactJS and styled using Tailwind CSS',
+            keyPoints: ['responsive & Interactive UI', 'Page routing using react-router-dom', 'Tailwind CSS for styling', 'Implemented Dark and light mode', 'Can download resume', 'Able to directly sent message', 'Using animaton icons' ],
+            repository: 'https://github.com/akhil-pl/portfolio-site',
+            link: 'NOT HOSTED',
+            images: [{src: Port1, caption: 'Home page' }, {src: Port2, caption: 'Home Page in light mode'}, {src: Port3, caption:'Contact page with message option'}, {src:Port4, caption: 'Tablet view'}, {src: Port5, caption: 'Mobile view'} ],
+        },
+        {
+            title: 'NGL Assesment Project',
+            description: 'This evaluation project is done for the NextGrowth Labs recruitment process. The aim of the project is to build a Django app, in which admin is able to add a new app with it\'s details like url, category, subcategory, logo and points for download. And a user should be able to view the apps available, follow the link, earn points by saving a screen shot of the app and view points earned.',
+            keyPoints: ['Role based view for Admin and user on login', 'Django REST framewok for implementing APIs', 'Pillow for Image processing', 'VueJS for frontend', 'SQLite database' ],
+            repository: 'https://github.com/akhil-pl/NGL_assesment_project',
+            link: 'https://ngl-project.scm.azurewebsites.net:443/ngl-project.git',
+            images: [{src: Ngl1, caption: 'Login View' }, {src: Ngl2, caption: 'Admin View'}, {src: Ngl3, caption:'User view'}, {src: Ngl4, caption: 'User summary page'}, {src: Ngl5, caption: 'About page'} ],
+        }
       ];
 
   return (

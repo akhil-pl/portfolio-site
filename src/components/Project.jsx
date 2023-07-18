@@ -30,7 +30,7 @@ const Project = ({ title, description, keyPoints, repository, link, images }) =>
   const prevImageIndex = (currentImageIndex - 1 + images.length) % images.length;
   const nextImageIndex = (currentImageIndex + 1) % images.length;
 
-  const currentImage = images[currentImageIndex];
+//   const currentImage = images[currentImageIndex];
 
   return (
     <div className="border p-4 rounded-lg shadow-lg mb-4">
