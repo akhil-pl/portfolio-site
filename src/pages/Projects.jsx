@@ -5,6 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import WebProject from '../components/Tabs/WebProject';
 import PythonProject from '../components/Tabs/PythonProject';
 import MLProject from '../components/Tabs/MLProject';
+import Blog from '../components/Tabs/Blog';
 
 
 function Work() {
@@ -29,6 +30,9 @@ function Work() {
                 <Tab selectedClassName="bg-slate-500 text-yellow-50 dark:bg-slate-500 dark:text-yellow-50 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 mx-auto dark:text-yellow-50 rounded-lg py-2 px-4">
                     Machine Learning
                 </Tab>
+                <Tab selectedClassName="bg-slate-500 text-yellow-50 dark:bg-slate-500 dark:text-yellow-50 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 mx-auto dark:text-yellow-50 rounded-lg py-2 px-4">
+                    Blog
+                </Tab>
             </TabList>
 
             <TabPanel>
@@ -39,6 +43,9 @@ function Work() {
             </TabPanel>
             <TabPanel>
                 <MLProject />
+            </TabPanel>
+            <TabPanel>
+                <Blog />
             </TabPanel>
         </Tabs>
     </section>

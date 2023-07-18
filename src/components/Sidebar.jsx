@@ -1,7 +1,7 @@
 import React from 'react';
 import Typed from 'react-typed';
 
-import {BsFillMoonStarsFill, BsFillArrowDownCircleFill} from 'react-icons/bs';
+import {BsFillMoonStarsFill} from 'react-icons/bs';
 import pic from "../Images/akhil.jpg";
 import resumePDF from "../Files/akhil.pdf";
 import logo from '../Images/Logos/logo.gif';
