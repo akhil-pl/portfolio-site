@@ -51,4 +51,5 @@ npm install react-typed --save --force
 npm install react-router-dom --force
 npm install react-tabs --force
 npm install react-chrono --force
+npm install @emailjs/browser --force
 ```
