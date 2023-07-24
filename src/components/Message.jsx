@@ -9,7 +9,7 @@ function MessageForm() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(process.env.REACT_APP_EMAILJS_YOUR_SERVICE_ID, process.env.REACT_APP_EMAILJS_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_YOUR_PUBLIC_KEY)
+        emailjs.sendForm(import.meta.env.VITE_EMAILJS_YOUR_SERVICE_ID, import.meta.env.VITE_EMAILJS_YOUR_TEMPLATE_ID, form.current, import.meta.env.VITE_EMAILJS_YOUR_PUBLIC_KEY) // Vite need VITE_ prefix and import.meta.env to access env variables
             .then((result) => {
                 console.log(result.text);
                 setMessageStatus('Message sent');
