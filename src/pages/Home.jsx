@@ -22,7 +22,7 @@ function Home() {
             </p>
         </div>
         <div className=' md:flex gap-10'>
-            <div className=' text-center bg-slate-400 dark:bg-gray-600 shadow-lg shadow-teal-600 p-10 rounded-xl my-10 flex-1 hover:scale-110 duration-300 hover:shadow-red-500'>
+            <div className=' text-center bg-slate-400 dark:bg-gray-600 shadow-lg shadow-teal-600 p-10 rounded-xl my-10 flex-1 hover:shadow-red-500'>
                 <img className=' mx-auto' src={code} width={500} height={500} />
                 <h3 className=' text-lg font-medium pt-8 pb-2 text-gray-800 mx-auto dark:text-yellow-50'>Back-end development</h3>
                 <p className=' py-2 text-justify text-gray-800 mx-auto dark:text-yellow-50'>
@@ -38,7 +38,7 @@ function Home() {
                 <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>SQLite</p>
                 <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Redis</p>
             </div>
-            <div className=' text-center bg-slate-400 dark:bg-gray-600 shadow-lg shadow-teal-600 p-10 rounded-xl my-10 flex-1 hover:scale-110 duration-300 hover:shadow-red-500'>
+            <div className=' text-center bg-slate-400 dark:bg-gray-600 shadow-lg shadow-teal-600 p-10 rounded-xl my-10 flex-1 hover:shadow-red-500'>
                 <img className=' mx-auto' src={frontend} width={500} height={500} />
                 <h3 className=' text-lg font-medium pt-8 pb-2 text-gray-800 mx-auto dark:text-yellow-50'>Front-end development</h3>
                 <p className=' py-2 text-justify text-gray-800 mx-auto dark:text-yellow-50'>
@@ -54,7 +54,7 @@ function Home() {
                 <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Routing</p>
                 <p className=' py-1 text-gray-800 mx-auto dark:text-yellow-50'>Vuex</p>
             </div>
-            <div className=' text-center bg-slate-400 dark:bg-gray-600 shadow-lg shadow-teal-600 p-10 rounded-xl my-10 flex-1 hover:scale-110 duration-300 hover:shadow-red-500'>
+            <div className=' text-center bg-slate-400 dark:bg-gray-600 shadow-lg shadow-teal-600 p-10 rounded-xl my-10 flex-1 hover:shadow-red-500'>
                 <img className=' mx-auto' src={ml} width={500} height={500} />
                 <h3 className=' text-lg font-medium pt-8 pb-2 text-gray-800 mx-auto dark:text-yellow-50'>Machine Learning</h3>
                 <p className=' py-2 text-justify text-gray-800 mx-auto dark:text-yellow-50'>

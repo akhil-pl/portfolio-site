@@ -13,7 +13,7 @@ function DSProject() {
                 <img src={qr} width={100} height={100} />
                 <img src={ml} width={100} height={100} />
             </div>
-            <h2 className="text-2xl p-4 text-center">Please come later, the Machine is still learning</h2>
+            <h2 className="text-2xl p-4 text-center">Please come later, the Data is still being collected</h2>
         </div>
   )
 }
