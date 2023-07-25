@@ -21,7 +21,7 @@ function PythonProject() {
     return (
         <div className='bg-slate-500 text-yellow-50 p-4 mb-5'>
             <h1 className="text-3xl font-burtons p-4">Python Projects</h1>
-            <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
+            <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap px-4'>
                 {projects.map((project, index) => (
                     <Project key={index} {...project} />
                 ))}

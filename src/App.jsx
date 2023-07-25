@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className={`flex flex-col ${darkMode ? 'dark' : ''}`}>
-      <main className="flex-1 bg-slate-200 lg:pl-0 dark:bg-gray-700">
+      <main className="flex-1 bg-slate-200 dark:bg-gray-700 lg:pl-0">
         <div className="hidden lg:flex">
           <aside className="w-3/12 sticky left-0 top-0 h-screen bg-gray-200">
             <Sidebar darkMode={darkMode} setDarkMode={setDarkMode} />

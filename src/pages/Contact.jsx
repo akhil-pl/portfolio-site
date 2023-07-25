@@ -6,13 +6,17 @@ import {AiFillFacebook,
     AiFillGithub,
     AiFillTwitterSquare,
     AiFillLinkedin,
+    AiFillGitlab,
     AiFillInstagram} from 'react-icons/ai';
+
+import {SiCodechef} from 'react-icons/si';
 
 import mobile from '../Images/Logos/mobile.gif';
 import email from '../Images/Logos/email.gif';
 import social from '../Images/Logos/social.gif';
 import location from '../Images/Logos/location.gif';
 import chat from '../Images/Logos/chat.gif';
+import repo from '../Images/Logos/repo.gif';
 
 function Contact() {
   return (
@@ -30,11 +34,17 @@ function Contact() {
                 <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={email} width={75} height={75} /> akhilplx@gmail.com <br></br> akhilplx@outlook.com </li>
                 <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={social} width={75} height={75} />
                     <div className=' text-3xl flex justify-center gap-8 py-3 text-gray-600 dark:text-yellow-50'>
-                        <a href="https://www.facebook.com/akhilplx" target="_blank" rel="noopener noreferrer"><AiFillFacebook /></a>
-                        <a href="https://github.com/akhil-pl" target="_blank" rel="noopener noreferrer"><AiFillGithub /></a>
-                        <a href="https://www.instagram.com/akhil_pl/" target="_blank" rel="noopener noreferrer"><AiFillInstagram /></a>
-                        <a href="https://www.linkedin.com/in/akhilplx" target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><AiFillTwitterSquare /></a>
+                        <a href="https://www.facebook.com/akhilplx" target="_blank" rel="noopener noreferrer" title="Facebook"><AiFillFacebook className=' hover:text-teal-600 hover:scale-150' /></a>
+                        <a href="https://www.instagram.com/akhil_pl/" target="_blank" rel="noopener noreferrer" title="instagram"><AiFillInstagram className=' hover:text-teal-600 hover:scale-150' /></a>
+                        <a href="https://www.linkedin.com/in/akhilplx" target="_blank" rel="noopener noreferrer" title="Linkedin"><AiFillLinkedin className=' hover:text-teal-600 hover:scale-150' /></a>
+                        <a href="https://twitter.com/akhilplx" target="_blank" rel="noopener noreferrer" title="Twitter"><AiFillTwitterSquare className=' hover:text-teal-600 hover:scale-150' /></a>
+                    </div>    
+                </li>
+                <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={repo} width={75} height={75} />
+                    <div className=' text-3xl flex justify-center gap-8 py-3 text-gray-600 dark:text-yellow-50'>
+                        <a href="https://github.com/akhil-pl" target="_blank" rel="noopener noreferrer" title="GitHub"><AiFillGithub className=' hover:text-teal-600 hover:scale-150' /> </a>
+                        <a href="https://gitlab.com/akhilplx" target="_blank" rel="noopener noreferrer" title="GitLab"><AiFillGitlab className=' hover:text-teal-600 hover:scale-150' /> </a>
+                        <a href="https://www.codechef.com/users/akhilplx" target="_blank" rel="noopener noreferrer" title="CodeChef"><SiCodechef className=' hover:text-teal-600 hover:scale-150' /> </a>
                     </div>    
                 </li>
             </ul>
