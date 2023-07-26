@@ -1,7 +1,7 @@
 import React from 'react';
 import Typed from 'react-typed';
 
-import {BsFillMoonStarsFill, BsFillSunFill} from 'react-icons/bs';
+import {BsFillMoonFill, BsFillSunFill} from 'react-icons/bs';
 import pic from "../Images/akhil.jpg";
 import resumePDF from "../Files/akhil.pdf";
 import logo from '../Images/Logos/logo.gif';
@@ -31,7 +31,7 @@ function Sidebar(props) {
             </div>
             <ul className=' flex items-center'>
                 <li className=' pl-2'>
-                    <BsFillMoonStarsFill onClick={() => props.setDarkMode(!props.darkMode) } className=' cursor-pointer text-3xl block dark:hidden ' />
+                    <BsFillMoonFill onClick={() => props.setDarkMode(!props.darkMode) } className=' cursor-pointer text-3xl block dark:hidden ' />
                     <BsFillSunFill onClick={() => props.setDarkMode(!props.darkMode) } className=' cursor-pointer text-3xl hidden dark:block text-yellow-50 ' />
                 </li>
                 <li>
