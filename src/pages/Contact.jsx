@@ -29,7 +29,7 @@ function Contact() {
                 me using any of the methods below:
             </p>
             <ul>
-                <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={location} width={75} height={75} /> Trivandrun, <br></br> India </li>
+                <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={location} width={75} height={75} /> Trivandrum, <br></br> India </li>
                 <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={mobile} width={75} height={75} /> +91 9995 743 556</li>
                 <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={email} width={75} height={75} /> akhilplx@gmail.com <br></br> akhilplx@outlook.com </li>
                 <li className='flex flex-wrap gap-3 items-center text-xl text-gray-800 mx-auto dark:text-yellow-50'><img src={social} width={75} height={75} />

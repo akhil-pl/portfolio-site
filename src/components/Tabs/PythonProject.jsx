@@ -1,5 +1,5 @@
 import React from 'react'
-import Project from '../Project'
+import ProjectTemplate from '../ProjectTemplate'
 
 import Self1 from "../../Images/Projects/Self1.png";
 import Self2 from "../../Images/Projects/Self2.png";
@@ -21,9 +21,9 @@ function PythonProject() {
     return (
         <div className='bg-slate-500 text-yellow-50 p-4 mb-5'>
             <h1 className="text-3xl font-burtons p-4">Python Projects</h1>
-            <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap px-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 px-4'>
                 {projects.map((project, index) => (
-                    <Project key={index} {...project} />
+                    <ProjectTemplate key={index} {...project} />
                 ))}
             </div>
         </div>

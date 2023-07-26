@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-// import 'react-tabs/style/react-tabs.css';
+
 
 import WebProject from '../components/Tabs/WebProject';
 import PythonProject from '../components/Tabs/PythonProject';
@@ -9,7 +9,7 @@ import MLProject from '../components/Tabs/MLProject';
 import Blog from '../components/Tabs/Blog';
 
 
-function Work() {
+function Projects() {
   return (
     
     <section className=' pt-10 px-5'>
@@ -22,19 +22,19 @@ function Work() {
         </div>
         <Tabs>
             <TabList className="flex rounded-t-lg">
-                <Tab selectedClassName="bg-slate-500 text-yellow-50 dark:bg-slate-500 dark:text-yellow-50 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 mx-auto dark:text-yellow-50 rounded-lg py-2 px-4">
+                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-red-500 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
                     Web
                 </Tab>
-                <Tab selectedClassName="bg-slate-500 text-yellow-50 dark:bg-slate-500 dark:text-yellow-50 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 mx-auto dark:text-yellow-50 rounded-lg py-2 px-4">
+                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-red-500 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
                     Python
                 </Tab>
-                <Tab selectedClassName="bg-slate-500 text-yellow-50 dark:bg-slate-500 dark:text-yellow-50 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 mx-auto dark:text-yellow-50 rounded-lg py-2 px-4">
+                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-red-500 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
                     D S
                 </Tab>
-                <Tab selectedClassName="bg-slate-500 text-yellow-50 dark:bg-slate-500 dark:text-yellow-50 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 mx-auto dark:text-yellow-50 rounded-lg py-2 px-4">
+                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-red-500 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
                     M L
                 </Tab>
-                <Tab selectedClassName="bg-slate-500 text-yellow-50 dark:bg-slate-500 dark:text-yellow-50 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 mx-auto dark:text-yellow-50 rounded-lg py-2 px-4">
+                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-red-500 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
                     Blog
                 </Tab>
             </TabList>
@@ -60,4 +60,4 @@ function Work() {
   )
 }
 
-export default Work
+export default Projects

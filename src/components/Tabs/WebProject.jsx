@@ -1,5 +1,5 @@
 import React from 'react'
-import Project from '../Project'
+import ProjectTemplate from '../ProjectTemplate'
 
 import Kanban1 from "../../Images/Projects/Kanban1.png";
 import Kanban2 from "../../Images/Projects/Kanban2.png";
@@ -35,7 +35,7 @@ function WebProject() {
             description: 'This is my port folio site. A completely frontend site written in ReactJS and styled using Tailwind CSS',
             keyPoints: ['responsive & Interactive UI', 'Page routing using react-router-dom', 'Tailwind CSS for styling', 'Implemented Dark and light mode', 'Can download resume', 'Able to directly sent message', 'Using animaton icons'],
             repository: 'https://github.com/akhil-pl/portfolio-site',
-            link: 'NOT HOSTED',
+            link: 'https://www.akhil.pl',
             images: [{ src: Port1, caption: 'Home page' }, { src: Port2, caption: 'Home Page in light mode' }, { src: Port3, caption: 'Contact page with message option' }, { src: Port4, caption: 'Tablet view' }, { src: Port5, caption: 'Mobile view' }],
         },
         {
@@ -51,9 +51,9 @@ function WebProject() {
     return (
         <div className='bg-slate-500 text-yellow-50 p-4 mb-5'>
             <h1 className="text-3xl font-burtons p-4">Web Projects</h1>
-            <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap px-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 px-4'>
                 {projects.map((project, index) => (
-                    <Project key={index} {...project} />
+                    <ProjectTemplate key={index} {...project} />
                 ))}
             </div>
         </div>

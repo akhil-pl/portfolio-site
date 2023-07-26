@@ -6,6 +6,7 @@ import pic from "../Images/akhil.jpg";
 import resumePDF from "../Files/akhil.pdf";
 import logo from '../Images/Logos/logo.gif';
 import scroll from '../Images/Logos/scroll.gif';
+import home from '../Images/Logos/home.gif';
 
 
 function Sidebar(props) {
@@ -21,7 +22,10 @@ function Sidebar(props) {
   return (
     
     <section className="min-h-screen bg-slate-300 dark:bg-gray-800">
-        <nav className=' px-5 pt-10 mb-12 flex justify-between'>
+        <nav className=' px-5 pt-5 mb-12 flex justify-between'>
+            <a href="/" title='Home' className=' block md:hidden fixed top-5 left-48 z-10'>
+                <img className=' mx-auto' src={home} width={50} height={50} />
+            </a>
             <div>
                 <img className=' mx-auto' src={logo} width={50} height={50} />
             </div>

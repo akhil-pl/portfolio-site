@@ -64,10 +64,19 @@ function About() {
                     professional in a dynamic and collaborative work environment.
                     <br></br>
                     <span className=' text-teal-600'>View my coding journey here</span>
-                    <div className=' text-3xl flex justify-center gap-8 py-3 text-gray-600 dark:text-yellow-50'>
-                        <a href="https://github.com/akhil-pl" target="_blank" rel="noopener noreferrer" title="GitHub"><AiFillGithub className=' hover:text-teal-600 hover:scale-150' /> </a>
-                        <a href="https://gitlab.com/akhilplx" target="_blank" rel="noopener noreferrer" title="GitLab"><AiFillGitlab className=' hover:text-teal-600 hover:scale-150' /> </a>
-                        <a href="https://www.codechef.com/users/akhilplx" target="_blank" rel="noopener noreferrer" title="CodeChef"><SiCodechef className=' hover:text-teal-600 hover:scale-150' /> </a>
+                    <div className=' text-5xl flex justify-center gap-8 py-3 text-gray-600 dark:text-yellow-50'>
+                        <a href="https://github.com/akhil-pl" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-2 hover:text-teal-600">
+                            <AiFillGithub className=' hover:scale-150' />
+                            <h5 className='text-lg'> GitHub </h5>
+                        </a>
+                        <a href="https://gitlab.com/akhilplx" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-2 hover:text-teal-600">
+                            <AiFillGitlab className=' hover:scale-150' />
+                            <h5 className='text-lg'> GitLab </h5>
+                        </a>
+                        <a href="https://www.codechef.com/users/akhilplx" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-2 hover:text-teal-600">
+                            <SiCodechef className=' hover:scale-150' />
+                            <h5 className='text-lg'> CodeChef </h5>
+                        </a>
                     </div>
                 </p>
             </div>

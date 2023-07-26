@@ -26,7 +26,7 @@ function Navbar() {
         </ul>
         {/* for mobile devices */}
         <div onClick={handleNav} className=' cursor-pointer block md:hidden'>
-            { nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} /> }
+            { nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} /> }
         </div>
         <div className={ nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-slate-300 dark:bg-gray-800 ease-in-out duration-700 ' : 'hidden' }>
             <h1 className=' w-full text-3xl font-bold m-4'>Select</h1>
