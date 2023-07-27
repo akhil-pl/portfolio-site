@@ -29,10 +29,10 @@ function Navbar() {
         <a href="/" title='Home' className=' block md:hidden mr-10'>
             <img className=' mx-auto' src={home} width={60} height={60} />
         </a>
-        <div onClick={handleNav} className=' cursor-pointer block md:hidden'>
-            { nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} /> }
+        <div onClick={handleNav} className='cursor-pointer block md:hidden'>
+            {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} />}
         </div>
-        <div className={ nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-slate-300 dark:bg-gray-800 ease-in-out duration-700 ' : 'hidden' }>
+        <div className={ nav ? 'fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-slate-300 dark:bg-gray-800 text-gray-800 dark:text-yellow-50' : 'hidden transition-transform ease-in-out duration-700' }>
             <h1 className=' w-full text-3xl font-bold m-4'>Select</h1>
             <ul className=' md:hidden pt-24 uppercase p-4'>
                 <NavLink to={'/'} onClick={handleNav} className={({isActive}) => isActive ? "text-teal-600 text-2xl p-4 border-b border-gray-600 block" : 'p-4 border-b border-gray-600 block' }>Home</NavLink>
