@@ -10,7 +10,7 @@ import Footer from './Footer';
 
 function Mainbar() {
   return (
-    <div className=' pt-5 px-5'>
+    <div className=' pt-5 pb-2 px-5'>
         <BrowserRouter>
             <Navbar />
             <Routes>

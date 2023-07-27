@@ -22,19 +22,19 @@ function Projects() {
         </div>
         <Tabs>
             <TabList className="flex rounded-t-lg">
-                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-red-500 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
+                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-orange-600 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
                     Web
                 </Tab>
-                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-red-500 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
+                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-orange-600 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
                     Python
                 </Tab>
-                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-red-500 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
+                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-orange-600 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
                     D S
                 </Tab>
-                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-red-500 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
+                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-orange-600 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
                     M L
                 </Tab>
-                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-red-500 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
+                <Tab selectedClassName="bg-slate-500 text-red-500 dark:bg-slate-500 dark:text-orange-600 py-2 px-4 rounded-t-lg rounded-b-none" className="bg-slate-400 dark:bg-gray-600 hover:bg-teal-600 dark:hover:bg-teal-600 text-gray-800 dark:text-yellow-50 rounded-lg py-2 px-4 md:px-8 text-lg md:text-xl font-bold cursor-pointer">
                     Blog
                 </Tab>
             </TabList>

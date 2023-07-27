@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 
 import banner from "../Images/h.gif";
+import home from '../Images/Logos/home.gif';
 
 function Navbar() {
 
@@ -14,7 +15,7 @@ function Navbar() {
 
 
   return (
-    <nav className={' sticky top-0 bg-cover bg-center font-burtons flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 md:pr-8 text-yellow-50 rounded-3xl'} style={{ backgroundImage: `url(${banner})` }}>
+    <nav className={' z-10 sticky top-0 bg-cover bg-center font-burtons flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 md:pr-8 text-yellow-50 rounded-3xl'} style={{ backgroundImage: `url(${banner})` }}>
         <h1 className=' w-full text-3xl font-bold'>Go To</h1>
         {/* for bigger devices */}
         <ul className='hidden md:flex'>
@@ -25,6 +26,9 @@ function Navbar() {
             
         </ul>
         {/* for mobile devices */}
+        <a href="/" title='Home' className=' block md:hidden mr-10'>
+            <img className=' mx-auto' src={home} width={60} height={60} />
+        </a>
         <div onClick={handleNav} className=' cursor-pointer block md:hidden'>
             { nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} /> }
         </div>

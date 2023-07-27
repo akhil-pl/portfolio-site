@@ -8,40 +8,30 @@ import {AiFillFacebook,
 import {BsPhone} from 'react-icons/bs';
 import {BiLogoPython,
     BiLogoJavascript,
-    BiLogoDjango,
-    BiLogoVuejs,
-    BiLogoReact,
     BiLogoHtml5,
-    BiLogoCss3,
-    BiLogoJava,
-    BiLogoFlask} from 'react-icons/bi';
+    BiLogoCss3} from 'react-icons/bi';
 import {MdAlternateEmail} from 'react-icons/md';
 
 
 function Footer() {
   return (
-    <section className='max-x-[1240px] mx-auto py-1 px-8 grid md:grid-cols-3 gap-8 bg-slate-300 dark:bg-gray-800 text-slate-500 rounded-3xl items-center'>
+    <section className='max-x-[1240px] mx-auto py-1 px-8 grid md:grid-cols-3 gap-3 bg-slate-300 dark:bg-gray-800 text-slate-500 rounded-3xl items-center text-xs md:text-sm'>
         <div>
             <h1>
-                Akhil P L | Python Developer
+                Akhil P L | Web / Python Developer | Data Analyst
             </h1>
             <p>
                 Site build with ReactJS and Tailwind CSS
             </p>
-            <div className='flex justify-between my-3'>
+            <div className='flex justify-between my-2 mr-20'>
                 <BiLogoPython />
                 <BiLogoJavascript />
-                <BiLogoFlask />
-                <BiLogoDjango />
-                <BiLogoVuejs />
-                <BiLogoReact />
                 <BiLogoHtml5 />
                 <BiLogoCss3 />
-                <BiLogoJava />
                 <AiFillGithub />
             </div>
         </div>
-        <div>
+        <div className=' md:px-10'>
             <ul>
                 <li className='flex flex-wrap gap-3 items-center'><BsPhone /> +91 9995 743 556</li>
                 <li className='flex flex-wrap gap-3 items-center'><MdAlternateEmail /> akhilplx@gmail.com</li>
