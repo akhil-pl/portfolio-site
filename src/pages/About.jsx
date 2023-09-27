@@ -55,11 +55,11 @@ hover:text-teal-600 hover:scale-150
 `;
 
 const iconTitleStyles = `
-invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute bg-teal-600 text-white text-xs md:text-sm px-2 py-1 rounded mt-2 -ml-6 transform -translate-x-1/2 transition-opacity
+z-10 invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute bg-teal-600 text-white text-xs md:text-sm px-2 py-1 rounded -mt-10 -ml-5 transform -translate-x-1/2 transition-opacity
 `;
 
 const iconTitleGroupStyle = `
-group inline-block relative
+group inline-block grid place-items-center
 `
 
 function About() {
@@ -110,34 +110,34 @@ function About() {
                 <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoCss3 className={iconLinkStyles} /> <span className={iconTitleStyles}>CSS </span> </a>
             </div>
             <div className={iconRow}>
-                <a href="https://www.java.com/en/" target="_blank" rel="noopener noreferrer" title="Java"><BiLogoJava className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://numpy.org/" target="_blank" rel="noopener noreferrer" title="NumPy"> <SiNumpy className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://pandas.pydata.org//" target="_blank" rel="noopener noreferrer" title="Pandas"> <SiPandas className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://scikit-learn.org/" target="_blank" rel="noopener noreferrer" title="Scikitlearn"> <SiScikitlearn className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://pytorch.org/" target="_blank" rel="noopener noreferrer" title="PyTorch"> <SiPytorch className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://scipy.org/" target="_blank" rel="noopener noreferrer" title="SciPy"> <SiScipy className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://www.iso.org/standard/76583.html" target="_blank" rel="noopener noreferrer" title="SQL"> <BsFiletypeSql className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://www.sqlite.org/" target="_blank" rel="noopener noreferrer" title="SQlite"> <SiSqlite className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
+                <a href="https://www.java.com/en/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <BiLogoJava className={iconLinkStyles} /> <span className={iconTitleStyles}> Java</span> </a>
+                <a href="https://numpy.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiNumpy className={iconLinkStyles} /> <span className={iconTitleStyles}> NumPy</span> </a>
+                <a href="https://pandas.pydata.org//" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiPandas className={iconLinkStyles} /> <span className={iconTitleStyles}> Pandas</span> </a>
+                <a href="https://scikit-learn.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiScikitlearn className={iconLinkStyles} /> <span className={iconTitleStyles}> Scikitlearn</span> </a>
+                <a href="https://pytorch.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiPytorch className={iconLinkStyles} /> <span className={iconTitleStyles}> PyTorch</span> </a>
+                <a href="https://scipy.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiScipy className={iconLinkStyles} /> <span className={iconTitleStyles}> SciPy</span> </a>
+                <a href="https://www.iso.org/standard/76583.html" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <BsFiletypeSql className={iconLinkStyles} /> <span className={iconTitleStyles}> SQL</span> </a>
+                <a href="https://www.sqlite.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiSqlite className={iconLinkStyles} /> <span className={iconTitleStyles}> SQlite</span> </a>
             </div>
             <div className={iconRow}>
-                <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer" title="Postgresql"><BiLogoPostgresql className={iconLinkStyles} /><span className={iconTitleStyles}> </span> </a>
-                <a href="https://redis.io/" target="_blank" rel="noopener noreferrer" title="Redis"><SiRedis className={iconLinkStyles} /><span className={iconTitleStyles}> </span> </a>
-                <a href="https://github.com/akhil-pl" target="_blank" rel="noopener noreferrer" title="GitHub"><AiFillGithub className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" title="VSCode"> <BiLogoVisualStudio className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" title="Git"> <BsGit className={iconLinkStyles} /> </a>
-                <a href="https://colab.research.google.com/" target="_blank" rel="noopener noreferrer" title="Google Colab"> <SiGooglecolab className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://www.microsoft.com/en-in/windows" target="_blank" rel="noopener noreferrer" title="Windows"> <SiWindows11 className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://www.linux.org/" target="_blank" rel="noopener noreferrer" title="Linux"> <SiLinux className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
+                <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoPostgresql className={iconLinkStyles} /><span className={iconTitleStyles}> Postgresql </span> </a>
+                <a href="https://redis.io/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><SiRedis className={iconLinkStyles} /><span className={iconTitleStyles}> Redis </span> </a>
+                <a href="https://github.com/akhil-pl" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><AiFillGithub className={iconLinkStyles} /> <span className={iconTitleStyles}> GitHub </span> </a>
+                <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <BiLogoVisualStudio className={iconLinkStyles} /> <span className={iconTitleStyles}> VSCode </span> </a>
+                <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <BsGit className={iconLinkStyles} /> <span className={iconTitleStyles}> Git </span> </a>
+                <a href="https://colab.research.google.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiGooglecolab className={iconLinkStyles} /> <span className={iconTitleStyles}> Google Colab </span> </a>
+                <a href="https://www.microsoft.com/en-in/windows" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiWindows11 className={iconLinkStyles} /> <span className={iconTitleStyles}> Windows </span> </a>
+                <a href="https://www.linux.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiLinux className={iconLinkStyles} /> <span className={iconTitleStyles}> Linux </span> </a>
             </div>
             <div className={iconRow}>
-                <a href="https://ubuntu.com/" target="_blank" rel="noopener noreferrer" title="Ubuntu"><SiUbuntu className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer" title="Azure"> <SiMicrosoftazure className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://www.json.org/" target="_blank" rel="noopener noreferrer" title="JSON"> <SiJson className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://yaml.org/" target="_blank" rel="noopener noreferrer" title="YAML"> <SiYaml className=' hover:text-teal-600 hover:scale-150' /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://www.openapis.org/" target="_blank" rel="noopener noreferrer" title="OpenAPI"> <SiOpenapiinitiative className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://swagger.io/" target="_blank" rel="noopener noreferrer" title="Swagger"> <SiSwagger className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" title="Tailind CSS"> <SiTailwindcss className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
-                <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" title="Bootstrap"> <SiBootstrap className={iconLinkStyles} /> <span className={iconTitleStyles}> </span> </a>
+                <a href="https://ubuntu.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiUbuntu className={iconLinkStyles} /> <span className={iconTitleStyles}> Ubuntu </span> </a>
+                <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiMicrosoftazure className={iconLinkStyles} /> <span className={iconTitleStyles}> Azure </span> </a>
+                <a href="https://www.json.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiJson className={iconLinkStyles} /> <span className={iconTitleStyles}> JSON </span> </a>
+                <a href="https://yaml.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiYaml className={iconLinkStyles} /> <span className={iconTitleStyles}> YAML </span> </a>
+                <a href="https://www.openapis.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiOpenapiinitiative className={iconLinkStyles} /> <span className={iconTitleStyles}> OpenAPI </span> </a>
+                <a href="https://swagger.io/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiSwagger className={iconLinkStyles} /> <span className={iconTitleStyles}> Swagger </span> </a>
+                <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiTailwindcss className={iconLinkStyles} /> <span className={iconTitleStyles}> Tailind CSS </span> </a>
+                <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiBootstrap className={iconLinkStyles} /> <span className={iconTitleStyles}> Bootstrap </span> </a>
             </div>
 
             <h4 className=' pt-10 text-center text-2xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>My Academic and Professional Timeline</h4>

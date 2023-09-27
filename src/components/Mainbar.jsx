@@ -9,20 +9,20 @@ import Contact from '../pages/Contact'
 import Footer from './Footer';
 
 function Mainbar() {
-  return (
-    <div className=' pt-5 pb-2 px-5'>
-        <BrowserRouter>
-            <Navbar />
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/About' element={<About />} />
-                <Route path='/Projects' element={<Projects />} />
-                <Route path='/Contact' element={<Contact />} />
-            </Routes>
-            <Footer />
-        </BrowserRouter>
-    </div>
-  )
+    return (
+        <div className=' pt-5 pb-2 px-5'>
+            <BrowserRouter>
+                <Navbar />
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/About' element={<About />} />
+                    <Route path='/Projects' element={<Projects />} />
+                    <Route path='/Contact' element={<Contact />} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
+        </div>
+    )
 }
 
 export default Mainbar

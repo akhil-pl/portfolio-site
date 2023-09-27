@@ -2,15 +2,28 @@ import React from 'react'
 import { Chrono } from "react-chrono";
 
 import { PiStudentFill } from 'react-icons/pi';
-import { MdWorkHistory } from 'react-icons/md';
+import { GrUserWorker } from 'react-icons/gr';
 import { BsPersonWorkspace } from 'react-icons/bs';
+import { BsPersonVcard } from 'react-icons/bs';
 
 import diploma from '../Images/About/diploma.png';
 import azureF from '../Images/About/azureF.png';
 import azureAI from '../Images/About/azureAI.png';
+import dataPMI from '../Images/About/dataPMI.png';
 
 function Timeline() {
     const items = [{
+        title: "August 2023",
+        cardTitle: "Python Developer",
+        url: "https://www.datapmi.com/",
+        cardSubtitle: "Intership at DataPMI Inc",
+        cardDetailedText: "Developing data alaytic application with FastAPI and dbt tools.",
+        media: {
+            type: "IMAGE",
+            source: {url: dataPMI}
+            }
+    },
+        {
         title: "Jun 2023",
         cardTitle: "Microsoft Certified",
         url: "https://www.credly.com/badges/bdb3f009-6fec-4610-87e4-2cf36cd9233c/linked_in?t=rw1wlj",
@@ -21,7 +34,7 @@ function Timeline() {
             source: {url: azureAI}
             }
     },
-        {
+    {
         title: "Jun 2023",
         cardTitle: "Microsoft Certified",
         url: "https://www.credly.com/badges/cd2aa168-722a-4d63-8383-41ba3d9648c1/linked_in?t=rw1wwq",
@@ -120,13 +133,14 @@ function Timeline() {
             >
                 <div className="chrono-icons">
                     <BsPersonWorkspace className=' text-lg' />
-                    <BsPersonWorkspace className=' text-lg' />
+                    <BsPersonVcard className=' text-lg' />
+                    <BsPersonVcard className=' text-lg' />
                     <PiStudentFill className=' text-lg' />
-                    <MdWorkHistory className=' text-lg' />
+                    <GrUserWorker className=' text-lg' />
                     <PiStudentFill className=' text-lg' />
-                    <MdWorkHistory className=' text-lg' />
-                    <MdWorkHistory className=' text-lg' />
-                    <MdWorkHistory className=' text-lg' />
+                    <GrUserWorker className=' text-lg' />
+                    <GrUserWorker className=' text-lg' />
+                    <GrUserWorker className=' text-lg' />
                     <PiStudentFill className=' text-lg' />
                     <PiStudentFill className=' text-lg' />
                     <PiStudentFill className=' text-lg' />
