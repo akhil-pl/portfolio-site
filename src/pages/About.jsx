@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 
 import Timeline from '../components/Timeline';
 
@@ -24,6 +24,7 @@ import {
     BsFiletypeSql,
     BsGit
 } from 'react-icons/bs';
+import {FaKaggle} from 'react-icons/fa';
 import {
     SiYaml,
     SiRedis,
@@ -43,7 +44,8 @@ import {
     SiTailwindcss,
     SiBootstrap,
     SiCodechef,
-    SiSqlite
+    SiSqlite,
+    SiKaggle
 } from 'react-icons/si';
 
 const iconRow = `
@@ -63,6 +65,10 @@ group inline-block grid place-items-center
 `
 
 function About() {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return (
         <section className=' pt-10 px-5'>
             <h3 className=' text-3xl font-burtons py-1 px-5 text-gray-800 mx-auto dark:text-yellow-50'>Hello World!!</h3>
@@ -92,6 +98,10 @@ function About() {
                         <a href="https://www.codechef.com/users/akhilplx" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-2 hover:text-teal-600">
                             <SiCodechef className=' hover:scale-150' />
                             <h5 className='text-lg'> CodeChef </h5>
+                        </a>
+                        <a href="https://www.kaggle.com/akhilpl" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-2 hover:text-teal-600">
+                            <FaKaggle className=' hover:scale-150' />
+                            <h5 className='text-lg'> Kaggle </h5>
                         </a>
                     </div>
                 </p>
