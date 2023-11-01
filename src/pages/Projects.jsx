@@ -20,7 +20,7 @@ function Projects() {
           
           // Scroll to the top of the navigation bar
           window.scrollTo({
-            top: window.scrollY + navBarRect.top,
+            top: window.scrollY + navBarRect.top - 96,
             behavior: 'smooth', // You can use 'auto' for instant scrolling
           });
         }

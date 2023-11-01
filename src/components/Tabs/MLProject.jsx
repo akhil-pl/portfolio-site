@@ -14,6 +14,7 @@ function MLProject() {
                 <img src={ml} width={100} height={100} />
             </div>
             <h2 className="text-2xl p-4 text-center">Please come later, the Machine is still learning</h2>
+            <h3 className='text-xl p-4 text-center'>Or view my kaggle accout.</h3>
         </div>
     )
 }

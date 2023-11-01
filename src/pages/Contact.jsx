@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 
 import Message from '../components/Message';
 
@@ -8,7 +8,7 @@ import {AiFillFacebook,
     AiFillLinkedin,
     AiFillGitlab,
     AiFillInstagram} from 'react-icons/ai';
-
+import {FaKaggle} from 'react-icons/fa';
 import {SiCodechef} from 'react-icons/si';
 
 import mobile from '../Images/Logos/mobile.gif';
@@ -19,8 +19,25 @@ import chat from '../Images/Logos/chat.gif';
 import repo from '../Images/Logos/repo.gif';
 
 function Contact() {
+
+    const navBarRef = useRef(null);
+
+    useLayoutEffect(() => {
+        if (navBarRef.current) {
+          // Get the position of the navigation bar relative to the viewport
+          const navBarRect = navBarRef.current.getBoundingClientRect();
+          
+          // Scroll to the top of the navigation bar
+          window.scrollTo({
+            top: window.scrollY + navBarRect.top - 96,
+            behavior: 'smooth', // You can use 'auto' for instant scrolling
+          });
+        }
+      }, []);
+
+
   return (
-    <section className=' grid grid-cols-1 py-5 px-5 md:grid-cols-2 gap-8 items-center'>
+    <section ref={navBarRef} className=' grid grid-cols-1 py-5 px-5 md:grid-cols-2 gap-8 items-center'>
         <div className=' pl-5'>
             <h3 className=' text-3xl font-burtons text-gray-800 mx-auto dark:text-yellow-50'>Get In Touch</h3>
             <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
@@ -45,6 +62,7 @@ function Contact() {
                         <a href="https://github.com/akhil-pl" target="_blank" rel="noopener noreferrer" title="GitHub"><AiFillGithub className=' hover:text-teal-600 hover:scale-150' /> </a>
                         <a href="https://gitlab.com/akhilplx" target="_blank" rel="noopener noreferrer" title="GitLab"><AiFillGitlab className=' hover:text-teal-600 hover:scale-150' /> </a>
                         <a href="https://www.codechef.com/users/akhilplx" target="_blank" rel="noopener noreferrer" title="CodeChef"><SiCodechef className=' hover:text-teal-600 hover:scale-150' /> </a>
+                        <a href="https://www.kaggle.com/akhilpl" target="_blank" rel="noopener noreferrer" title="Kaggle"><FaKaggle className=' hover:text-teal-600 hover:scale-150' /> </a>
                     </div>    
                 </li>
             </ul>

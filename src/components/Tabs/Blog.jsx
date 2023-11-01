@@ -12,7 +12,7 @@ function Blog() {
                 <img src={edit} width={150} height={150} />
                 <img src={service} width={150} height={150} />
             </div>
-            <h2 className="text-2xl p-4 text-center">Sorry for the delay, edit is going on.</h2>
+            <h2 className="text-2xl p-4 text-center">Sorry for the suspense, edit is going on.</h2>
         </div>
     )
 }

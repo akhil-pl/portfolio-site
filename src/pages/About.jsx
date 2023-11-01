@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 
 import Timeline from '../components/Timeline';
 
@@ -22,7 +22,8 @@ import {
 } from 'react-icons/bi';
 import {
     BsFiletypeSql,
-    BsGit
+    BsGit,
+    BsDashLg
 } from 'react-icons/bs';
 import {FaKaggle} from 'react-icons/fa';
 import {
@@ -45,8 +46,14 @@ import {
     SiBootstrap,
     SiCodechef,
     SiSqlite,
-    SiKaggle
+    SiFastapi,
+    SiMysql,
+    SiApacheairflow,
+    SiDbt,
+    SiGnometerminal,
+    SiStreamlit
 } from 'react-icons/si';
+import {VscBlank} from 'react-icons/vsc';
 
 const iconRow = `
 flex justify-between m-3 text-2xl md:text-4xl text-gray-800 mx-auto dark:text-yellow-50
@@ -65,12 +72,23 @@ group inline-block grid place-items-center
 `
 
 function About() {
+    const navBarRef = useRef(null);
+
     useLayoutEffect(() => {
-        window.scrollTo(0, 0);
+        if (navBarRef.current) {
+          // Get the position of the navigation bar relative to the viewport
+          const navBarRect = navBarRef.current.getBoundingClientRect();
+          
+          // Scroll to the top of the navigation bar
+          window.scrollTo({
+            top: window.scrollY + navBarRect.top - 96,
+            behavior: 'smooth', // You can use 'auto' for instant scrolling
+          });
+        }
       }, []);
 
     return (
-        <section className=' pt-10 px-5'>
+        <section ref={navBarRef} className=' pt-10 px-5'>
             <h3 className=' text-3xl font-burtons py-1 px-5 text-gray-800 mx-auto dark:text-yellow-50'>Hello World!!</h3>
             <div className='grid grid-cols-1 px-5 md:grid-cols-2 gap-10 items-start'>
                 <p className=' text-justify text-md leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
@@ -112,12 +130,12 @@ function About() {
             <div className={iconRow}>
                 <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle}><BiLogoPython className={iconLinkStyles} /><span className={iconTitleStyles}>Python</span></a>
                 <a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoJavascript className={iconLinkStyles} /> <span className={iconTitleStyles}> JavaScript</span> </a>
+                <a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><SiFastapi className={iconLinkStyles} /> <span className={iconTitleStyles}> FastAPI</span> </a>
                 <a href="https://flask.palletsprojects.com/en/2.3.x/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoFlask className={iconLinkStyles} /> <span className={iconTitleStyles}> Flask</span> </a>
                 <a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoDjango className={iconLinkStyles} /> <span className={iconTitleStyles}> Django</span> </a>
                 <a href="https://vuejs.org//" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoVuejs className={iconLinkStyles} /> <span className={iconTitleStyles}> VueJS</span> </a>
                 <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoReact className={iconLinkStyles} /> <span className={iconTitleStyles}>ReactJS </span> </a>
                 <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoHtml5 className={iconLinkStyles} /> <span className={iconTitleStyles}>HTML5 </span> </a>
-                <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoCss3 className={iconLinkStyles} /> <span className={iconTitleStyles}>CSS </span> </a>
             </div>
             <div className={iconRow}>
                 <a href="https://www.java.com/en/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <BiLogoJava className={iconLinkStyles} /> <span className={iconTitleStyles}> Java</span> </a>
@@ -131,16 +149,16 @@ function About() {
             </div>
             <div className={iconRow}>
                 <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoPostgresql className={iconLinkStyles} /><span className={iconTitleStyles}> Postgresql </span> </a>
+                <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><SiMysql className={iconLinkStyles} /><span className={iconTitleStyles}> MySQL </span> </a>
                 <a href="https://redis.io/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><SiRedis className={iconLinkStyles} /><span className={iconTitleStyles}> Redis </span> </a>
                 <a href="https://github.com/akhil-pl" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><AiFillGithub className={iconLinkStyles} /> <span className={iconTitleStyles}> GitHub </span> </a>
                 <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <BiLogoVisualStudio className={iconLinkStyles} /> <span className={iconTitleStyles}> VSCode </span> </a>
                 <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <BsGit className={iconLinkStyles} /> <span className={iconTitleStyles}> Git </span> </a>
                 <a href="https://colab.research.google.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiGooglecolab className={iconLinkStyles} /> <span className={iconTitleStyles}> Google Colab </span> </a>
-                <a href="https://www.microsoft.com/en-in/windows" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiWindows11 className={iconLinkStyles} /> <span className={iconTitleStyles}> Windows </span> </a>
-                <a href="https://www.linux.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiLinux className={iconLinkStyles} /> <span className={iconTitleStyles}> Linux </span> </a>
+                <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoCss3 className={iconLinkStyles} /> <span className={iconTitleStyles}>CSS </span> </a>
             </div>
-            <div className={iconRow}>
-                <a href="https://ubuntu.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiUbuntu className={iconLinkStyles} /> <span className={iconTitleStyles}> Ubuntu </span> </a>
+            <div className={iconRow}>                
+                <a href="https://en.wikipedia.org/wiki/Command-line_interface" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiGnometerminal className={iconLinkStyles} /> <span className={iconTitleStyles}> CLI </span> </a>
                 <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiMicrosoftazure className={iconLinkStyles} /> <span className={iconTitleStyles}> Azure </span> </a>
                 <a href="https://www.json.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiJson className={iconLinkStyles} /> <span className={iconTitleStyles}> JSON </span> </a>
                 <a href="https://yaml.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiYaml className={iconLinkStyles} /> <span className={iconTitleStyles}> YAML </span> </a>
@@ -148,6 +166,16 @@ function About() {
                 <a href="https://swagger.io/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiSwagger className={iconLinkStyles} /> <span className={iconTitleStyles}> Swagger </span> </a>
                 <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiTailwindcss className={iconLinkStyles} /> <span className={iconTitleStyles}> Tailind CSS </span> </a>
                 <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiBootstrap className={iconLinkStyles} /> <span className={iconTitleStyles}> Bootstrap </span> </a>
+            </div>
+            <div className={iconRow}>
+                <a href="https://www.microsoft.com/en-in/windows" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiWindows11 className={iconLinkStyles} /> <span className={iconTitleStyles}> Windows </span> </a>
+                <a href="https://www.linux.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiLinux className={iconLinkStyles} /> <span className={iconTitleStyles}> Linux </span> </a>
+                <a href="https://ubuntu.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiUbuntu className={iconLinkStyles} /> <span className={iconTitleStyles}> Ubuntu </span> </a>
+                <a href="https://streamlit.io/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiStreamlit className={iconLinkStyles} /> <span className={iconTitleStyles}> Streamlit </span> </a>
+                <a href="https://airflow.apache.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiApacheairflow className={iconLinkStyles} /> <span className={iconTitleStyles}> Apache Airflow </span> </a>
+                <a href="https://www.getdbt.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiDbt className={iconLinkStyles} /> <span className={iconTitleStyles}> DBT </span> </a>
+                <VscBlank />
+                <VscBlank />
             </div>
 
             <h4 className=' pt-10 text-center text-2xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>My Academic and Professional Timeline</h4>
