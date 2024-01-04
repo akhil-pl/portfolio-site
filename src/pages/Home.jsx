@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Mosaic from '../components/Mosaic';
+
 import code from "../Images/code.gif";
 import frontend from "../Images/frontend.gif";
 import ml from "../Images/ml.gif";
@@ -9,7 +11,7 @@ function Home() {
     
     <section className=' pt-10 px-5'>
         <div className=' pl-5'>
-            <h3 className=' text-3xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>Services I offer</h3>
+            <h3 className=' text-3xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>Hello World! I can offer these Services</h3>
             <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
                 As a passionate and enthusiastic professional embarking on a career in Programming and Data Science, 
                 I offer a range of services aimed at developing efficient and innovative software solutions. 
@@ -78,6 +80,7 @@ function Home() {
             By leveraging my skills and enthusiasm, I am committed to delivering solutions that meet your needs 
             and contribute to your success.
         </p>
+        <Mosaic />
     </section>
     
   )

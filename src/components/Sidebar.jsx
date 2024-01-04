@@ -27,7 +27,7 @@ function Sidebar(props) {
             </div>
             <ul className=' flex items-center'>
                 <li className=' pl-2'>
-                    <BsFillMoonFill onClick={() => props.setDarkMode(!props.darkMode) } className=' cursor-pointer text-3xl block dark:hidden transition ease-in-out duration-700 ' />
+                    <BsFillMoonFill onClick={() => props.setDarkMode(!props.darkMode) } className=' cursor-pointer text-3xl block dark:hidden ' />
                     <BsFillSunFill onClick={() => props.setDarkMode(!props.darkMode) } className=' cursor-pointer text-3xl hidden dark:block text-yellow-50 ' />
                 </li>
                 <li>
