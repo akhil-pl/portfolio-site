@@ -48,7 +48,7 @@ function Sidebar(props) {
                     </h2>
                     <div>
                         <h3 className=' font-burtons text-2xl py-2 md:text-3xl lg:text-2xl dark:text-yellow-50 '>
-                            <Typed strings={['PYTHON DEVELOPER', 'WEB DEVELOPER', 'DATA ANALYST']} typeSpeed={100} backSpeed={40} loop />
+                            <Typed strings={['PYTHON DEVELOPER', 'WEB DEVELOPER', 'DATA SCIENTIST', 'DATA ANALYST']} typeSpeed={100} backSpeed={40} loop />
                         </h3>
                     </div>
                 </div>
