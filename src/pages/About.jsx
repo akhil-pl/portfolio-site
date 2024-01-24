@@ -25,7 +25,7 @@ import {
     BsGit,
     BsDashLg
 } from 'react-icons/bs';
-import {FaKaggle} from 'react-icons/fa';
+import { FaKaggle } from 'react-icons/fa';
 import {
     SiYaml,
     SiRedis,
@@ -53,7 +53,7 @@ import {
     SiGnometerminal,
     SiStreamlit
 } from 'react-icons/si';
-import {VscBlank} from 'react-icons/vsc';
+import { VscBlank } from 'react-icons/vsc';
 
 const iconRow = `
 flex justify-between m-3 text-2xl md:text-4xl text-gray-800 mx-auto dark:text-yellow-50
@@ -76,32 +76,34 @@ function About() {
 
     useLayoutEffect(() => {
         if (navBarRef.current) {
-          // Get the position of the navigation bar relative to the viewport
-          const navBarRect = navBarRef.current.getBoundingClientRect();
-          
-          // Scroll to the top of the navigation bar
-          window.scrollTo({
-            top: window.scrollY + navBarRect.top - 96,
-            behavior: 'smooth', // You can use 'auto' for instant scrolling
-          });
+            // Get the position of the navigation bar relative to the viewport
+            const navBarRect = navBarRef.current.getBoundingClientRect();
+
+            // Scroll to the top of the navigation bar
+            window.scrollTo({
+                top: window.scrollY + navBarRect.top - 96,
+                behavior: 'smooth', // You can use 'auto' for instant scrolling
+            });
         }
-      }, []);
+    }, []);
 
     return (
         <section ref={navBarRef} className=' pt-10 px-5'>
             <h3 className=' text-3xl font-burtons py-1 px-5 text-gray-800 mx-auto dark:text-yellow-50'>Hello World!!</h3>
             <div className='grid grid-cols-1 px-5 md:grid-cols-2 gap-10 items-start'>
                 <p className=' text-justify text-md leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
-                    An enthusiastic professional, currently in a daring attempt to restart his career in the field
-                    of Programming and Data Science, after having 8+ years of experience as a Civil Engineer.
-                    After finishing Diploma in Programming, now doing Diploma in Data Science as part of
-                    multilevel online BS Degree in Data Science and Application offered by IIT, Madras.
+                    A versatile professional with 9+ years of experience, successfully transitioned his
+                    career into the field of Programming and Data Science, after being a Civil Engineer for eight
+                    years. I have completed Dual Diploma in Programming and Data Science from IIT Madras. Currently 
+                    doing internship as Python Developer at DataPMI Inc, concurrently pursuing BS degree in Data Science & Application from 
+                    IIT Madras. I am also certified in Azure fundementals and Azure AI fundamentals by Microsoft.
                     <br></br>
                 </p>
                 <p className=' text-justify text-md leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
-                    Seeking a role as a Developer or Data Analyst, where I can apply my technical skills
-                    to develop efficient and innovative software solutions. Eager to learn and grow as a
-                    professional in a dynamic and collaborative work environment.
+                    Possessing a disciplined and analytical approach, I am eager to apply my diverse skill
+                    set in a Data driven Developer role. I bring a unique blend of engineering expertise and
+                    programming proficiency to a dynamic and collaborative work environment, fuelled by a
+                    continuous commitment to learning & growth.
                     <br></br>
                     <span className=' text-teal-600'>View my coding journey here</span>
                     <div className=' text-5xl flex justify-center gap-8 py-3 text-gray-600 dark:text-yellow-50'>
@@ -157,7 +159,7 @@ function About() {
                 <a href="https://colab.research.google.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiGooglecolab className={iconLinkStyles} /> <span className={iconTitleStyles}> Google Colab </span> </a>
                 <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} ><BiLogoCss3 className={iconLinkStyles} /> <span className={iconTitleStyles}>CSS </span> </a>
             </div>
-            <div className={iconRow}>                
+            <div className={iconRow}>
                 <a href="https://en.wikipedia.org/wiki/Command-line_interface" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiGnometerminal className={iconLinkStyles} /> <span className={iconTitleStyles}> CLI </span> </a>
                 <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiMicrosoftazure className={iconLinkStyles} /> <span className={iconTitleStyles}> Azure </span> </a>
                 <a href="https://www.json.org/" target="_blank" rel="noopener noreferrer" className={iconTitleGroupStyle} > <SiJson className={iconLinkStyles} /> <span className={iconTitleStyles}> JSON </span> </a>
