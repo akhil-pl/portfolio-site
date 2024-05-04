@@ -93,9 +93,9 @@ function About() {
             <div className='grid grid-cols-1 px-5 md:grid-cols-2 gap-10 items-start'>
                 <p className=' text-justify text-md leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
                     A versatile professional with 9+ years of experience, successfully transitioned his
-                    career into the field of Programming and Data Science, after being a Civil Engineer for eight
+                    career into the field of Programming and Data Science, after being a Civil Engineer for six
                     years. I have completed Dual Diploma in Programming and Data Science from IIT Madras. Currently 
-                    doing internship as Python Developer at DataPMI Inc, concurrently pursuing BS degree in Data Science & Application from 
+                    employed as Associate Consultant at Cloudium Software Pvt Ltd, concurrently pursuing BS degree in Data Science & Application from 
                     IIT Madras. I am also certified in Azure fundementals and Azure AI fundamentals by Microsoft.
                     <br></br>
                 </p>

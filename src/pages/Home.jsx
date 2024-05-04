@@ -15,7 +15,7 @@ function Home() {
                     As a passionate and enthusiastic professional embarking on a career in Programming and Data Science,
                     I offer a range of services aimed at developing efficient and innovative software solutions.
                     Whether your requirement varies from creating a simple website to building a complex web platform OR
-                    from simply getting an inference from your data to training predictive a Machine learning model out of the data,
+                    from simply getting an inference from your data to training a predictive Machine learning model out of the data,
                     I can deliver robust solutions that enhance user experience and meet your business objectives.
                 </p>
                 <br></br>
