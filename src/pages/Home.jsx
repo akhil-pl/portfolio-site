@@ -30,16 +30,19 @@ function Home() {
             <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
                 For more details please go to the projects page.
             </p>
-            {/* <div>
+            <div>
                 <h3 className=' text-2xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>Acheivements</h3>
-                <div style={{ height: '80vh', display: 'grid', placeItems: 'center', overflow: 'hidden' }}>
-                    <Carousel1 />
+                <div style={{ maxWidth: 'calc(100vw - 120px)', maxHeight: 'calc(100vw * 2 / 4 - 40px)', display: 'grid', placeItems: 'center', overflow: 'hidden' }}>
+                    <Carousel />
                 </div>
                 <h3 className=' text-2xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>Associated with</h3>
+                <div style={{ maxWidth: 'calc(100vw - 120px)', maxHeight: '50vh', display: 'grid', placeItems: 'center', overflow: 'hidden' }}>
+                    <Carousel1 />
+                </div>
                 <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>
                     For more details please go to the about page.
                 </p>
-            </div> */}
+            </div>
         </section>
 
     )
