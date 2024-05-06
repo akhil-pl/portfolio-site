@@ -36,7 +36,7 @@ function Home() {
                     <Carousel />
                 </div>
                 <h3 className=' text-2xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>Associated with</h3>
-                <div style={{ maxWidth: 'calc(100vw - 120px)', maxHeight: '50vh', display: 'grid', placeItems: 'center', overflow: 'hidden' }}>
+                <div style={{ maxWidth: 'calc(100vw - 120px)', maxHeight: '80vh', display: 'grid', placeItems: 'center', overflow: 'hidden' }}>
                     <Carousel1 />
                 </div>
                 <p className=' text-justify text-md py-2 leading-8 text-gray-800 mx-auto dark:text-yellow-50 '>

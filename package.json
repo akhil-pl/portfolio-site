@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "caniuse-lite": "^1.0.30001615",
+    "infinite-react-carousel": "^1.2.11",
     "react": "^18.2.0",
     "react-chrono": "^2.2.2",
     "react-dom": "^18.2.0",

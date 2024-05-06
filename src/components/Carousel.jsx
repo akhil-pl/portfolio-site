@@ -11,18 +11,52 @@ const CertificateCarousel = ({ certificateImages }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % certificateImages.length);
+      setCurrentIndex((prevIndex) =>
+        (prevIndex + 1) % certificateImages.length
+      );
     }, 2000);
     return () => clearInterval(interval);
   }, [certificateImages.length]);
 
+  const calculateImagePositions = (imageIndex) => { // Use imageIndex for clarity
+    const positions = [];
+    const numImages = certificateImages.length;
+
+    // Calculate center image index, handling edge cases
+    const centerIndex =
+      Math.min(Math.max(imageIndex, 0), numImages - 1);
+
+    for (let i = 0; i < 3; i++) {
+      const offsetIndex = (centerIndex - i + numImages) % numImages; // Handle wraparound
+      positions.push({
+        index: offsetIndex,
+        style: {
+          transform: `translateX(${
+            i === 1 ? '0' : (i === 0 ? '-33.33%' : '33.33%')
+          })`,
+          opacity: i === 1 ? 1 : 0.7, // Adjust opacity for visual emphasis
+          width: i === 1 ? '100%' : '66.66%', // Adjust width for size variation
+        },
+      });
+    }
+
+    return positions;
+  };
+
+  // Use imageIndex directly instead of calculating it again
+  const imagePositions = calculateImagePositions(currentIndex);
+
   return (
     <div className="relative w-full h-full flex items-center justify-center">
-      <img
-        src={certificateImages[currentIndex].src}
-        alt={`Certificate ${currentIndex + 1}`}
-        className="w-full h-auto max-h-screen"
-      />
+      {imagePositions.map((position) => (
+        <img
+          key={position.index}
+          src={certificateImages[position.index].src}
+          alt={`Certificate ${position.index + 1}`}
+          className={`w-${position.style.width} h-auto max-h-screen absolute ${position.style.transform}`}
+          style={position.style}
+        />
+      ))}
     </div>
   );
 };
