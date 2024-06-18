@@ -32,7 +32,8 @@ function Home() {
             </p>
             <div>
                 <h3 className=' text-2xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>Acheivements</h3>
-                <div style={{ maxWidth: 'calc(100vw - 120px)', maxHeight: 'calc(100vw * 2 / 4 - 40px)', display: 'grid', placeItems: 'center', overflow: 'hidden' }}>
+                {/* <div style={{ maxWidth: 'calc(100vw - 120px)', maxHeight: 'calc(100vw * 2 / 4 - 40px)', display: 'grid', placeItems: 'center', overflow: 'hidden' }}> */}
+                <div style={{ display: 'grid', placeItems: 'center', overflow: 'hidden' }}>
                     <Carousel />
                 </div>
                 <h3 className=' text-2xl font-burtons py-1 text-gray-800 mx-auto dark:text-yellow-50'>Associated with</h3>

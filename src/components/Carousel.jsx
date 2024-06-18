@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import ReactSimplyCarousel from 'react-simply-carousel';
 
 import diploma from '../Images/About/diploma.png';
 import diplomaD from '../Images/About/diplomaD.png';
@@ -6,76 +7,93 @@ import azureF from '../Images/About/azureF.png';
 import azureAI from '../Images/About/azureAI.png';
 import deep from '../Images/About/deep.png';
 
-const CertificateCarousel = ({ certificateImages }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        (prevIndex + 1) % certificateImages.length
-      );
-    }, 2000);
-    return () => clearInterval(interval);
-  }, [certificateImages.length]);
+function Carousel() {
+    const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
-  const calculateImagePositions = (imageIndex) => { // Use imageIndex for clarity
-    const positions = [];
-    const numImages = certificateImages.length;
-
-    // Calculate center image index, handling edge cases
-    const centerIndex =
-      Math.min(Math.max(imageIndex, 0), numImages - 1);
-
-    for (let i = 0; i < 3; i++) {
-      const offsetIndex = (centerIndex - i + numImages) % numImages; // Handle wraparound
-      positions.push({
-        index: offsetIndex,
-        style: {
-          transform: `translateX(${
-            i === 1 ? '0' : (i === 0 ? '-33.33%' : '33.33%')
-          })`,
-          opacity: i === 1 ? 1 : 0.7, // Adjust opacity for visual emphasis
-          width: i === 1 ? '100%' : '66.66%', // Adjust width for size variation
-        },
-      });
-    }
-
-    return positions;
-  };
-
-  // Use imageIndex directly instead of calculating it again
-  const imagePositions = calculateImagePositions(currentIndex);
-
-  return (
-    <div className="relative w-full h-full flex items-center justify-center">
-      {imagePositions.map((position) => (
-        <img
-          key={position.index}
-          src={certificateImages[position.index].src}
-          alt={`Certificate ${position.index + 1}`}
-          className={`w-${position.style.width} h-auto max-h-screen absolute ${position.style.transform}`}
-          style={position.style}
-        />
-      ))}
-    </div>
-  );
-};
-
-// Usage
-const certificateImages = [
-  { src: diploma, caption: 'Diploma' },
-  { src: diplomaD, caption: 'Diploma D' },
-  { src: azureF, caption: 'Azure F' },
-  { src: azureAI, caption: 'Azure AI' },
-  { src: deep, caption: 'Deep' },
-];
-
-const Carousel = () => {
-  return (
-    <div className=" h-fit flex items-center justify-center bg-gray-200">
-      <CertificateCarousel certificateImages={certificateImages} />
-    </div>
-  );
-};
+    return (
+        <div>
+            <ReactSimplyCarousel
+                containerProps={{
+                    style: {
+                      width: "100%",
+                      justifyContent: "space-between",
+                      userSelect: "none"
+                    }
+                  }}
+                activeSlideIndex={activeSlideIndex}
+                activeSlideProps={{
+                    style: {
+                      background: "blue"
+                    }
+                  }}
+                onRequestChange={setActiveSlideIndex}
+                // itemsToShow={3}
+                // itemsToScroll={1}
+                forwardBtnProps={{
+                    //here you can also pass className, or any other button element attributes
+                    style: {
+                        alignSelf: 'center',
+                        background: 'black',
+                        border: 'none',
+                        borderRadius: '50%',
+                        color: 'white',
+                        cursor: 'pointer',
+                        fontSize: '20px',
+                        height: 30,
+                        lineHeight: 1,
+                        textAlign: 'center',
+                        width: 30,
+                    },
+                    children: <span>{`>`}</span>,
+                }}
+                backwardBtnProps={{
+                    //here you can also pass className, or any other button element attributes
+                    style: {
+                        alignSelf: 'center',
+                        background: 'black',
+                        border: 'none',
+                        borderRadius: '50%',
+                        color: 'white',
+                        cursor: 'pointer',
+                        fontSize: '20px',
+                        height: 30,
+                        lineHeight: 1,
+                        textAlign: 'center',
+                        width: 30,
+                    },
+                    children: <span>{`<`}</span>,
+                }}
+                // responsiveProps={[
+                //     {
+                //         itemsToShow: 2,
+                //         itemsToScroll: 2,
+                //         minWidth: 768,
+                //     },
+                // ]}
+                speed={400}
+                easing="linear"
+                centerMode
+            >
+                {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
+                <div>
+                    <img className=' mx-auto' src={diploma} width={5000} height={5000} />
+                </div>
+                <div>
+                    <img className=' mx-auto' src={diplomaD} width={5000} height={5000} />
+                </div>
+                <div>
+                    <img className=' mx-auto' src={azureF} width={5000} height={5000} />
+                </div>
+                <div>
+                    <img className=' mx-auto' src={azureAI} width={5000} height={5000} />
+                </div>
+                <div>
+                    <img className=' mx-auto' src={deep} width={5000} height={5000} />
+                </div>
+            </ReactSimplyCarousel>
+        </div>
+    );
+}
 
 export default Carousel;
