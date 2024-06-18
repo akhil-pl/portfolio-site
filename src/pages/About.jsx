@@ -22,8 +22,7 @@ import {
 } from 'react-icons/bi';
 import {
     BsFiletypeSql,
-    BsGit,
-    BsDashLg
+    BsGit
 } from 'react-icons/bs';
 import { FaKaggle } from 'react-icons/fa';
 import {
